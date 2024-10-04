@@ -10,8 +10,9 @@ const NavbarComponent = () => {
         <Nav className="ms-auto">
           <Nav.Link href="/">Inicio</Nav.Link>
           <Nav.Link href="/servicios">Servicios</Nav.Link>
-          <Nav.Link href="/noticias">Noticias</Nav.Link>
           <Nav.Link href="/tramites">Trámites</Nav.Link>
+          <Nav.Link href="/noticias">Noticias</Nav.Link>
+          <Nav.Link href="/portaldeTransparencia">Portal de Transparencia</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -19,3 +20,4 @@ const NavbarComponent = () => {
 };
 
 export default NavbarComponent;
+

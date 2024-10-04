@@ -1,0 +1,27 @@
+npm install bootstrap
+npm install react-router-dom
+npm install react-bootstrap
+npm install bootstrap
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+mkdir src/componentes
+echo > src/componentes/NavbarComponent.js
+echo > src/componentes/Footer.js
+echo > src/componentes/HomePage.js
+echo > src/componentes/Servicios.js
+echo > src/componentes/Noticias.js
+echo > src/componentes/Tramites.js
+
+
+Subir los cambios al repositorio remoto
+git push -u origin master
+
+
+
+buscar en el repositorio  https://github.com/Oscar1499/PaginaAlcaldia.git
+git clone https://github.com/Oscar1499/PaginaAlcaldia.git
+git remote -v
+
+git pull origin master
+git add .
+git commit 
