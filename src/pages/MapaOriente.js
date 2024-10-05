@@ -13,7 +13,8 @@ L.Icon.Default.mergeOptions({
 });
 
 const MapaOriente = () => {
-  const position = [13.3171, -87.9434]; // Coordenadas de La Unión
+  const position = [13.336073, -87.841909]; // Coordenadas de Alcaldía Municipal de La Unión
+
   const navigate = useNavigate();
 
   const handleMarkerClick = () => {
@@ -26,11 +27,11 @@ const MapaOriente = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={position} eventHandlers={{ click: handleMarkerClick }}>
-        <Popup>
-          Alcaldía Municipal de La Unión
-        </Popup>
-      </Marker>
+      <Marker position={position} eventHandlers={{ click: handleMarkerClick }} title="Alcaldía de La Unión">
+  <Popup>
+    Alcaldía Municipal de La Unión
+  </Popup>
+</Marker>
     </MapContainer>
   );
 };
