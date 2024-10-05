@@ -4,7 +4,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 const NavbarComponent = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/">Alcaldía</Navbar.Brand>
+      <Navbar.Brand href="/">Alcaldía</Navbar.Brand> {/*  */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
@@ -26,3 +26,4 @@ const NavbarComponent = () => {
 };
 
 export default NavbarComponent;
+
