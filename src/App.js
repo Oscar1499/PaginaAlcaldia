@@ -13,8 +13,13 @@ import ConsultasGenerales from './pages/ConsultasGenerales';
 import ConsultasVeterinarias from './pages/ConsultasVeterinarias'; 
 import MapaOriente from './pages/MapaOriente'; 
 import AlcaldiaLaUnion from './pages/AlcaldiaLaUnion'; 
-
-
+import DistritoMeanguera from './pages/DistritoMeanguera'; 
+import DistritoConchagua from './pages/DistritoConchagua'; 
+import DistritoElCarmen from './pages/DistritoElCarmen';
+import DistritoIntipuca from './pages/DistritoIntipuca';
+import DistritoSanAlejo from './pages/DistritoSanAlejo';
+import DistritoYucuaiquin from './pages/DistritoYucuaiquin';
+import DistritoYayantique from './pages/DistritoYayantique';
 
 const App = () => (
   <Router>
@@ -23,7 +28,14 @@ const App = () => (
       
       <Route path="/" element={<MapaOriente />} /> {/* Aquí se muestra el mapa */}
       <Route path="/mapa-oriente" element={<MapaOriente />} />
-      <Route path="/alcaldia-la-union" element={<AlcaldiaLaUnion />} /> {/* */}
+      <Route path="/alcaldia-la-union" element={<AlcaldiaLaUnion />} /> 
+      <Route path="/meanguera" element={<DistritoMeanguera />} /> 
+      <Route path="/conchagua" element={<DistritoConchagua />} />
+      <Route path="/el-carmen" element={<DistritoElCarmen />} />
+      <Route path="/intipuca" element={<DistritoIntipuca />} />
+      <Route path="/san-alejo" element={<DistritoSanAlejo />} />
+      <Route path="/yucuaiquin" element={<DistritoYucuaiquin />} />
+      <Route path="/yayantique" element={<DistritoYayantique />} />
       <Route path="*" element={<h2>Página no encontrada</h2>} />
       <Route path="/servicios" element={<Servicios />} />
       <Route path="/noticias" element={<Noticias />} />
