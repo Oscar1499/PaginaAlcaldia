@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; 
 import L from 'leaflet';
 import { useNavigate } from 'react-router-dom';
-import '../estilos/estilomapa.css'; // Importa el archivo CSS
+import '../estilos/estilomapa.css'; //  archivo CSS
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -13,27 +13,43 @@ L.Icon.Default.mergeOptions({
 });
 
 const MapaOriente = () => {
-  const position = [13.336073, -87.841909]; // Coordenadas de Alcaldía Municipal de La Unión
-
   const navigate = useNavigate();
 
-  const handleMarkerClick = () => {
-    navigate('/alcaldia-la-union');
+  const handleMarkerClick = (url) => {
+    navigate(url);
   };
 
+  // Coordenadas de los municipios
+  const municipios = [
+    { name: 'Alcaldía de La Unión', position: [13.336073, -87.841909], url: '/alcaldia-la-union' },
+    { name: 'Yucuaiquín', position: [13.5480, -88.0020], url: '/yucuaiquin' },
+    { name: 'Meanguera', position: [13.4079, -88.1237], url: '/meanguera' },
+    { name: 'San Alejo', position: [13.4296, -87.9603], url: '/san-alejo' },
+    { name: 'Conchagua', position: [13.3072, -87.8616], url: '/conchagua' },
+    { name: 'El Carmen', position: [13.3550, -87.9970], url: '/el-carmen' },
+    { name: 'Yayantique', position: [13.1894, -87.7090], url: '/yayantique' },
+    { name: 'Intipucá', position: [13.1967, -88.0542], url: '/intipuca' },
+  ];
+
   return (
-    <MapContainer center={position} zoom={13} style={{ height: "100vh", width: "100%" }}>
+    <MapContainer center={[13.336073, -87.841909]} zoom={10} style={{ height: "100vh", width: "100%" }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={position} eventHandlers={{ click: handleMarkerClick }} title="Alcaldía de La Unión">
-  <Popup>
-    Alcaldía Municipal de La Unión
-  </Popup>
-</Marker>
+      {municipios.map((municipio, idx) => (
+        <Marker
+          key={idx}
+          position={municipio.position}
+          eventHandlers={{ click: () => handleMarkerClick(municipio.url) }}
+          title={municipio.name}
+        >
+          <Popup>{municipio.name}</Popup>
+        </Marker>
+      ))}
     </MapContainer>
   );
 };
 
 export default MapaOriente;
+

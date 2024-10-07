@@ -2,6 +2,8 @@ npm install bootstrap
 npm install react-router-dom
 npm install react-bootstrap
 npm install bootstrap
+npm install leaflet react-leaflet
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 mkdir src/componentes
@@ -21,7 +23,8 @@ git push -u origin master
 buscar en el repositorio  https://github.com/Oscar1499/PaginaAlcaldia.git
 git clone https://github.com/Oscar1499/PaginaAlcaldia.git
 git remote -v
-
-git pull origin master
-git add .
-git commit 
+git checkout PaginaAlcaldia  # Asegúrate de estar en la rama correcta
+git add .                     # Agrega tus cambios
+git commit -m "Descripción de los cambios"
+git push origin PaginaAlcaldia
+git push -u origin PaginaAlcaldia  # Haz push a la rama remota 
