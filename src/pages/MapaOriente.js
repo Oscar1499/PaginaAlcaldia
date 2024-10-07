@@ -23,11 +23,11 @@ const MapaOriente = () => {
   const municipios = [
     { name: 'Alcaldía de La Unión', position: [13.336073, -87.841909], url: '/alcaldia-la-union' },
     { name: 'Yucuaiquín', position: [13.5480, -88.0020], url: '/yucuaiquin' },
-    { name: 'Meanguera', position: [13.4079, -88.1237], url: '/meanguera' },
+    { name: 'Yayantique', position: [13.4479, -88.0220], url: '/yayantique' },
     { name: 'San Alejo', position: [13.4296, -87.9603], url: '/san-alejo' },
     { name: 'Conchagua', position: [13.3072, -87.8616], url: '/conchagua' },
     { name: 'El Carmen', position: [13.3550, -87.9970], url: '/el-carmen' },
-    { name: 'Yayantique', position: [13.1894, -87.7090], url: '/yayantique' },
+    { name: 'Meanguera', position: [13.1894, -87.7090], url: '/meanguera' },
     { name: 'Intipucá', position: [13.1967, -88.0542], url: '/intipuca' },
   ];
 
