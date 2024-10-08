@@ -1,13 +1,15 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import '../estilos/estilonav.css';
+
 
 const NavbarComponent = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/">Alcaldía</Navbar.Brand> {/*  */}
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto">
+    <Navbar.Brand href="/">Alcaldía</Navbar.Brand> 
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="ms-auto">
           <Nav.Link href="/">Inicio</Nav.Link>
           <NavDropdown title="Comunidades" id="comunidades-dropdown">
             <NavDropdown.Item href="/comunidades/bebeteca">Bebeteca</NavDropdown.Item>
@@ -22,6 +24,7 @@ const NavbarComponent = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+
   );
 };
 
