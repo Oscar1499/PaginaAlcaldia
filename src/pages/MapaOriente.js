@@ -3,8 +3,9 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; 
 import L from 'leaflet';
 import { useNavigate } from 'react-router-dom';
-import '../estilos/estilomapa.css'; //  archivo CSS
+import '../estilos/estilomapa.css'; // archivo CSS
 
+// Ajusta el icono predeterminado de Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: require('../assets/iconos/alcaldia-icon2.png.png'), // Icono personalizado 2x
@@ -32,11 +33,20 @@ const MapaOriente = () => {
   ];
 
   return (
-    <MapContainer center={[13.336073, -87.841909]} zoom={10} style={{ height: "100vh", width: "100%" }}>
-    <TileLayer
-  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    />
+    <MapContainer 
+      center={[13.336073, -87.841909]} 
+      zoom={10} 
+      style={{ height: "100vh", width: "100%" }}
+      scrollWheelZoom={false}  // Desactiva el zoom con la rueda del mouse
+      dragging={true}          // Permite arrastrar el mapa
+      touchZoom={false}        // Desactiva el zoom en pantallas táctiles
+      doubleClickZoom={false}  // Desactiva el zoom al hacer doble clic
+      zoomControl={false}      // Desactiva los controles de zoom
+    >
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      />
       {municipios.map((municipio, idx) => (
         <Marker
           key={idx}

@@ -1,56 +1,87 @@
 /* estilonav.css */
 /* Cambiar el tamaño de la fuente y ajustar el padding del navbar */
+
+/* Estilos para el navbar */
+.navbar.navbar-dark {
+  background-color: #434a5b !important; /* Fuerza el color de fondo */
+}
+
+/* Cambia el color de los enlaces del navbar */
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important; /* Cambia el color de los enlaces */
+}
+
+/* Resaltar el elemento del menú cuando el mouse pase por encima */
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #575c78 !important; /* Cambia el color de fondo en hover */
+  color: rgb(212, 212, 212) !important; /* Cambia el color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado alrededor del texto */
+}
+
 .navbar-brand {
-    font-size: 1.5rem; /* Ajusta el tamaño de la marca */
-  }
-  
-  .navbar-nav .nav-link {
-    font-size: 1.2rem; /* Ajusta el tamaño de las opciones del menú */
-    padding-right: 20px; /* Ajusta el espacio entre los elementos del nav */
-  }
-  
-  .navbar-nav .nav-dropdown {
-    font-size: 1.1rem; /* Ajusta el tamaño de las opciones desplegables */
-  }
-  
+  font-size: 1.5rem; 
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem; 
+  padding-right: 20px; 
+}
+
+.navbar-nav .nav-dropdown {
+  font-size: 1.1rem; 
+}
+
 
 .navbar {
-    display: flex;
-    justify-content: center; 
+  display: flex;
+  justify-content: center; 
 }
 
 .navbar-nav {
-    display: flex;
-    justify-content: center; 
-    width: 100%; 
+  display: flex;
+  justify-content: center; 
+  width: 100%; 
 }
 
 .nav-link {
-    margin: 0 15px; 
+  margin: 0 15px; 
 }
 
 
 .navbar {
-    background-color: #434a5b !important; /* Cambia el color aquí */
+  background-color: #434a5b !important; 
 }
 
 .nav-link {
-    color: #ffffff !important; /* Cambia el color del texto de los enlaces */
+  color: #ffffff !important; /* Cambia el color del texto de los enlaces */
 }
 
 
 
 /* Resaltar el elemento del menú cuando el mouse pase por encima */
 .navbar-nav .nav-link {
-    font-size: 1.2rem;
-    padding-right: 20px;
-    transition: background-color 0.3s, border-radius 0.3s; /* Transición suave */
-  }
-  
-  .navbar-nav .nav-link:hover {
-    background-color: #575c78; /* Cambia el color de fondo en hover */
-    color: rgb(212, 212, 212); /* Cambia el color del texto */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 15px; /* Espaciado alrededor del texto */
-  }
+  font-size: 1.2rem;
+  padding-right: 20px;
+  transition: background-color 0.3s, border-radius 0.3s; /* Transición suave */
+}
+
+
+
+/* Contenedor para la imagen del logo */
+.image-container {
+  width: 100%; 
+  height: 50vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; 
+}
+
+/* Estilo para la imagen del logo */
+.header-logo {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsionarla */
+}
 
