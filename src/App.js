@@ -28,6 +28,8 @@ import Tributario from './pages/Tributario';
 import LicenciasMatriculas from './pages/LicenciasMatriculas';
 import Juridicos from './pages/Juridicos';
 import Cementerio from './pages/Cementerio';
+import AlbumNoticias from './componentes/AlbumNoticias';
+
 
 const App = () => (
   <Router>
@@ -41,6 +43,10 @@ const App = () => (
           {/* Página de Inicio */}
           <Route path="/" element={<HomePage />} />
           <Route path="/servicios-destacados" element={<ServiciosDestacados />} />
+          <Route path="/" exact component={AlbumNoticias} />
+          <Route path="/noticia1" element={Noticias} />
+          <Route path="/noticia2" element={Noticias} />
+          <Route path="/noticia3" element={Noticias} />
           <Route path="/mapa-oriente" element={<MapaOriente />} />
           <Route path="/alcaldia-la-union" element={<AlcaldiaLaUnion />} />
           <Route path="/meanguera" element={<DistritoMeanguera />} />

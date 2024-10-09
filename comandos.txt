@@ -4,6 +4,8 @@ npm install react-bootstrap
 npm install bootstrap
 npm install leaflet react-leaflet
 npm install react-slick slick-carousel
+npm install react-transition-group
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';

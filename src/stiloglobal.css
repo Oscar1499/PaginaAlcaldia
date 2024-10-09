@@ -142,3 +142,25 @@
 .card-link {
   margin-top: auto; /* Alinea el enlace al fondo de la tarjeta */
 }
+.section-container {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; 
+}
+/* HomePage.css */
+.section-container,
+.map-section {
+  transition: opacity 0.9s ease-in-out; 
+  opacity: 1; 
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+

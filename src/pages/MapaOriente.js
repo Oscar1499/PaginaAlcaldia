@@ -35,6 +35,7 @@ const MapaOriente = () => {
   ];
 
   return (
+    <div className='map-container'>
     <MapContainer 
       center={[13.336073, -87.841909]} 
       zoom={10} 
@@ -60,6 +61,7 @@ const MapaOriente = () => {
         </Marker>
       ))}
     </MapContainer>
+    </div>
   );
 };
 
