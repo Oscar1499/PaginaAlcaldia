@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavbarComponent from './componentes/NavbarComponent';
 import Layout from './componentes/Layout';
 import Footer from './componentes/Footer';
@@ -22,6 +22,12 @@ import DistritoSanAlejo from './pages/DistritoSanAlejo';
 import DistritoYucuaiquin from './pages/DistritoYucuaiquin';
 import DistritoYayantique from './pages/DistritoYayantique';
 import PortalTransparencia from './pages/PortalTransparencia';
+import ServiciosDestacados from './componentes/ServiciosDestacados';
+import RegistroFamiliar from './pages/RegistroFamiliar';
+import Tributario from './pages/Tributario';
+import LicenciasMatriculas from './pages/LicenciasMatriculas';
+import Juridicos from './pages/Juridicos';
+import Cementerio from './pages/Cementerio';
 
 const App = () => (
   <Router>
@@ -34,7 +40,7 @@ const App = () => (
         <Routes>
           {/* Página de Inicio */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/" element={<MapaOriente />} />
+          <Route path="/servicios-destacados" element={<ServiciosDestacados />} />
           <Route path="/mapa-oriente" element={<MapaOriente />} />
           <Route path="/alcaldia-la-union" element={<AlcaldiaLaUnion />} />
           <Route path="/meanguera" element={<DistritoMeanguera />} />
@@ -55,6 +61,13 @@ const App = () => (
           <Route path="/comunidades/consultas-generales" element={<ConsultasGenerales />} />
           <Route path="/comunidades/consultas-veterinarias" element={<ConsultasVeterinarias />} />
 
+          {/* Rutas de servicios destacados */}
+          <Route path="/registro-familiar" element={<RegistroFamiliar />} />
+          <Route path="/tributario" element={<Tributario />} />
+          <Route path="/licencias-matriculas" element={<LicenciasMatriculas />} />
+          <Route path="/juridicos" element={<Juridicos />} />
+          <Route path="/cementerio" element={<Cementerio />} />
+
           {/* Ruta para el Portal de Transparencia */}
           <Route path="/portaltransparencia" element={<PortalTransparencia />} />
 
@@ -70,3 +83,4 @@ const App = () => (
 );
 
 export default App;
+

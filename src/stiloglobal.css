@@ -1,0 +1,77 @@
+.servicios-destacados {
+  background-image: url('./assets/iconos/fondo-imagen.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.servicios-destacados h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+
+/* Disposición horizontal */
+.iconos-servicios {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+
+.icono {
+  text-decoration: none; 
+  color: inherit; 
+  background-color: rgba(253, 253, 253, 0.9); /* Fondo semi-transparente */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 200px;
+  width: 200px;
+  margin: 10px; /* Margen entre los íconos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+.icono-imagen {
+  width: 60px; /* Tamaño de los íconos */
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.icono p {
+  color: #0b0b0b; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none; 
+}
+
+.icono:hover p {
+  color: rgb(38, 48, 193);
+  text-decoration: none;
+}
+
+
+
+
+
+
+  
