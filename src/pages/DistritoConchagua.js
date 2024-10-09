@@ -2,7 +2,7 @@ import React from 'react';
 
 const DistritoConchagua = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Distrito de Conchagua</h1>
       <p>
         Conchagua, un municipio costero del departamento de La Unión, es conocido por sus playas

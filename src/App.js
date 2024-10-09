@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavbarComponent from './componentes/NavbarComponent';
+import Layout from './componentes/Layout';
 import Footer from './componentes/Footer';
+import HomePage from './pages/HomePage'; 
 import Servicios from './pages/Servicios';
 import Noticias from './pages/Noticias';
 import Tramites from './pages/Tramites';
@@ -19,6 +21,7 @@ import DistritoIntipuca from './pages/DistritoIntipuca';
 import DistritoSanAlejo from './pages/DistritoSanAlejo';
 import DistritoYucuaiquin from './pages/DistritoYucuaiquin';
 import DistritoYayantique from './pages/DistritoYayantique';
+import PortalTransparencia from './pages/PortalTransparencia';
 
 const App = () => (
   <Router>
@@ -26,9 +29,11 @@ const App = () => (
       {/* Barra de navegación */}
       <NavbarComponent />
 
-      {/* Rutas de la aplicación */}
-      <div className="main-content">
+      {/* Layout principal */}
+      <Layout>
         <Routes>
+          {/* Página de Inicio */}
+          <Route path="/" element={<HomePage />} />
           <Route path="/" element={<MapaOriente />} />
           <Route path="/mapa-oriente" element={<MapaOriente />} />
           <Route path="/alcaldia-la-union" element={<AlcaldiaLaUnion />} />
@@ -49,10 +54,14 @@ const App = () => (
           <Route path="/comunidades/becas-universitarias" element={<BecasUniversitarias />} />
           <Route path="/comunidades/consultas-generales" element={<ConsultasGenerales />} />
           <Route path="/comunidades/consultas-veterinarias" element={<ConsultasVeterinarias />} />
+
+          {/* Ruta para el Portal de Transparencia */}
+          <Route path="/portaltransparencia" element={<PortalTransparencia />} />
+
           {/* Página no encontrada */}
           <Route path="*" element={<h2>Página no encontrada</h2>} />
         </Routes>
-      </div>
+      </Layout>
 
       {/* Footer */}
       <Footer />
@@ -61,4 +70,3 @@ const App = () => (
 );
 
 export default App;
-

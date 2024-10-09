@@ -2,7 +2,7 @@ import React from 'react';
 
 const DistritoYucuaiquin = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Distrito de Yucuaiquín</h1>
       <p>
         Yucuaiquín es un municipio del departamento de La Unión, conocido por su hermosa

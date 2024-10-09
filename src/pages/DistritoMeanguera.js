@@ -2,7 +2,7 @@ import React from 'react';
 
 const DistritoMeanguera = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Distrito de Meanguera</h1>
       <p>
         Meanguera es un municipio del departamento de La Unión, conocido por su ambiente rural

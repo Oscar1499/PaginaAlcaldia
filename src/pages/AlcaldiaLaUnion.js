@@ -2,7 +2,7 @@ import React from 'react';
 
 const AlcaldiaLaUnion = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Historia de la Alcaldía de La Unión</h1>
       <p>
         La Unión es una ciudad histórica del oriente de El Salvador, fundada en el siglo XVIII. Ha sido testigo del crecimiento económico de la región gracias a su puerto y su estratégica ubicación en la Bahía de La Unión.

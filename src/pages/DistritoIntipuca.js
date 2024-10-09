@@ -2,7 +2,7 @@ import React from 'react';
 
 const DistritoIntipuca = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Distrito de Intipucá</h1>
       <p>
         Intipucá es un municipio destacado por su desarrollo económico, apoyado por las remesas

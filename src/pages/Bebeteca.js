@@ -1,10 +1,11 @@
 import React from 'react';
 
+
 const Bebeteca = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Bebeteca</h1>
-      <p>Información sobre la Bebeteca.</p>
+      <p>Contenido de la Bebeteca...</p>
     </div>
   );
 };

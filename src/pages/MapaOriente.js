@@ -4,6 +4,8 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useNavigate } from 'react-router-dom';
 import '../estilos/estilomapa.css'; // archivo CSS
+//import Slide from '../componentes/SlideEventos';  
+
 
 // Ajusta el icono predeterminado de Leaflet
 delete L.Icon.Default.prototype._getIconUrl;

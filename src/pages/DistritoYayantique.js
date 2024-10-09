@@ -2,7 +2,7 @@ import React from 'react';
 
 const DistritoYayantique = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Distrito de Yayantique</h1>
       <p>
         Yayantique es un pequeño municipio lleno de historia y tradiciones que forman parte importante

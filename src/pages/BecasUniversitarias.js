@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 const BecasUniversitarias = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Becas Universitarias</h1>
       <p>Información sobre las becas universitarias disponibles...</p>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const DistritoElCarmen = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Distrito de El Carmen</h1>
       <p>
         El Carmen es un municipio de La Unión conocido por su agricultura y su ambiente rural.

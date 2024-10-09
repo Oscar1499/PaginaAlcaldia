@@ -2,7 +2,7 @@ import React from 'react';
 
 const DistritoSanAlejo = () => {
   return (
-    <div>
+    <div className="page-content">
       <h1>Distrito de San Alejo</h1>
       <p>
         San Alejo es uno de los municipios más antiguos de La Unión, conocido por su rica historia

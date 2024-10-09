@@ -1,87 +1,114 @@
-/* estilonav.css */
-/* Cambiar el tamaño de la fuente y ajustar el padding del navbar */
-
-/* Estilos para el navbar */
-.navbar.navbar-dark {
-  background-color: #434a5b !important; /* Fuerza el color de fondo */
+/* Contenedor de la imagen fija */
+.image-container {
+  width: 100%;               /* Hace que ocupe todo el ancho de la pantalla */
+  height: 18vh;              /* Hace que ocupe solo el 18% de la altura de la ventana */
+  display: flex;             /* Utiliza flexbox para centrar los elementos */
+  justify-content: center;   /* Centra la imagen horizontalmente */
+  align-items: center;       /* Centra la imagen verticalmente */
+  overflow: hidden;          /* Evita que la imagen se desborde si es más grande que el contenedor */
+  padding: 0px 0;           /* Añade un poco de padding por si necesitas separación */
+  position: fixed;           /* Fija la imagen en la parte superior de la ventana */
+  top: 0;
+  z-index: 10;               /* Asegura que la imagen esté sobre el contenido */
 }
 
-/* Cambia el color de los enlaces del navbar */
-.navbar-dark .navbar-nav .nav-link {
-  color: #ffffff !important; /* Cambia el color de los enlaces */
+/* Estilos para la imagen del logo */
+.header-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* Mantiene la imagen cubriendo el contenedor */
+  min-width: 100%;
+  min-height: 100%;
 }
-
-/* Resaltar el elemento del menú cuando el mouse pase por encima */
-.navbar-dark .navbar-nav .nav-link:hover {
-  background-color: #575c78 !important; /* Cambia el color de fondo en hover */
-  color: rgb(212, 212, 212) !important; /* Cambia el color del texto */
-  border-radius: 5px; /* Bordes redondeados */
-  padding: 10px 15px; /* Espaciado alrededor del texto */
-}
-
-.navbar-brand {
-  font-size: 1.5rem; 
-}
-
-.navbar-nav .nav-link {
-  font-size: 1.2rem; 
-  padding-right: 20px; 
-}
-
-.navbar-nav .nav-dropdown {
-  font-size: 1.1rem; 
-}
-
-
-.navbar {
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;  /* Asegura que el contenido no cubra la imagen */
+  background-color: rgba(255, 255, 255, 0.8);  /* Fondo semitransparente */
   display: flex;
-  justify-content: center; 
+  flex-direction: column;  /* Ordena los elementos de arriba a abajo */
+  align-items: center;  /* Centra los elementos */
+}
+/* Estilos para el botón del portal */
+.portal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 120px;     /* Ancho del botón */
+  height: 30px;     /* Alto del botón */
+  cursor: pointer;  /* Para cambiar el cursor cuando se pasa sobre el botón */
+  transition: opacity 0.3s ease;
+  z-index: 200;     /* Asegura que el botón esté por encima de otros elementos */
 }
 
+.portal-button:hover {
+  opacity: 0.7;
+}
+/* Selecciona el navbar específicamente con la clase personalizada */
+.navbar-custom.navbar-dark {
+  background-color: #034383 !important; /* El !important asegura que este estilo se aplique */
+}
+
+
+/* Estilos para la barra de navegación fija */
+.navbar {
+  position: fixed;           /* Fija el menú en la parte superior */
+  top: 18vh;                 /* Coloca el menú justo debajo de la imagen */
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* Centra el contenido de la barra de navegación */
+  background-color: #1755e3 !important;
+  z-index: 20;               /* Asegura que la barra de navegación esté por encima de otros elementos */
+  padding: 0px 0;           /* Añade padding para mejor separación */
+}
+
+/* Ajustes para el navbar */
 .navbar-nav {
   display: flex;
-  justify-content: center; 
-  width: 100%; 
+  justify-content: center; /* Centra los elementos de la navegación */
+  flex-grow: 1;
+  text-align: center; /* Asegura que el texto esté centrado */
 }
 
-.nav-link {
-  margin: 0 15px; 
+.navbar-toggler {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.navbar {
-  background-color: #434a5b !important; 
+/* Contenedor del contenido de las otras páginas */
+.page-content {
+  margin-top: 30vh; /* Deja espacio suficiente para la imagen y la barra de navegación */
 }
 
-.nav-link {
-  color: #ffffff !important; /* Cambia el color del texto de los enlaces */
-}
-
-
-
-/* Resaltar el elemento del menú cuando el mouse pase por encima */
-.navbar-nav .nav-link {
-  font-size: 1.2rem;
-  padding-right: 20px;
-  transition: background-color 0.3s, border-radius 0.3s; /* Transición suave */
-}
-
-
-
-/* Contenedor para la imagen del logo */
-.image-container {
-  width: 100%; 
-  height: 50vh; 
+/* Estilos para el slide */
+.simple-slide-container {
+  width: 100%;
+  height: 75vh;               /* Define el tamaño del slide */
+  overflow: hidden;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  transition: height 0.5s ease, transform 0.5s ease;
+  margin-top: 1vh;          /* Se asegura que el slide comience después del menú */
 }
 
-/* Estilo para la imagen del logo */
-.header-logo {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsionarla */
+.simple-slide-container.scrolled {
+  height: 70vh;              /* Reduce el tamaño del slide cuando se hace scroll */
+  transform: scale(0.95);    /* Reducción del tamaño al hacer scroll */
 }
+
+/* Ajuste para las imágenes del carousel */
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* Mantiene la imagen ajustada sin deformarse */
+  min-width: 100vw;
+}
+
 
