@@ -1,32 +1,81 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../estilos/footer.css'; 
+import React, { useState } from 'react';
+import '../estilos/footer.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
+  // Estado para el modo oscuro / modo claro
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Función para alternar entre tema oscuro y claro
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <footer className="bg-light text-dark pt-4 pb-2">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 mb-4">
-            <h4 className="footer-heading">Redes Sociales</h4>
-            <div className="d-flex flex-column">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-link">Facebook</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-link">Twitter</a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-link">Instagram</a>
-            </div>
-          </div>
-          <div className="col-md-6 mb-4">
-            <h4 className="footer-heading">Contacto</h4>
-            <p>Email: <a href="mailto:info@alcaldia.com" className="footer-link">info@alcaldia.com</a></p>
-            <p>Teléfono: <a href="tel:+1234567890" className="footer-link">+1 234 567 890</a></p>
+    <footer className={darkMode ? 'dark' : 'light'}>
+      <div className="footer-container">
+        <div className="footer-left">
+          <h2>
+            Alcaldia la Union Sur 
+            {/* Botón para cambiar entre luna y sol */}
+            <button className="theme-toggle" onClick={toggleTheme}>
+              {darkMode ? "☀️" : "🌙"} 
+            </button>
+          </h2>
+          <p>Contactanos en redes sociales.</p>
+          <div className="social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:someone@example.com">
+              <i className="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
-        <div className="text-center mt-4">
-          <p>&copy; 2024 Alcaldía. Todos los derechos reservados.</p>
+        <div className="footer-middle">
+          <h3>Servicios</h3>
+          <ul>
+            <li>Servicios Generales</li>
+            <li>Servicios Mercado</li>
+            <li>Bienestar Animal</li>
+            <li>Servicios Cementerio</li>
+          </ul>
         </div>
+        <div className="footer-middle">
+          <h3>Tramites</h3>
+          <ul>
+            <li>Inmuebles</li>
+            <li>Constancias</li>
+            <li>Cementerios</li>
+            <li>Registros</li>
+          </ul>
+        </div>
+        <div className="footer-middle">
+          <h3>Contactanos</h3>
+          <ul>
+            <li>Nosotros</li>
+            <li>Portal</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>© 2024 Alcaldia Union Sur</p>
       </div>
     </footer>
   );
 };
 
 export default Footer;
+
+
+
+
+
+
+
+
+

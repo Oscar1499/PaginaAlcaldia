@@ -12,10 +12,17 @@
   z-index: 10;               /* Asegura que la imagen esté sobre el contenido */
 }
 
+img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* O usa 'contain' si quieres que toda la imagen se vea */
+}
+
+
 /* Estilos para la imagen del logo */
 .header-logo {
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 180px;
   object-fit: cover;          /* Mantiene la imagen cubriendo el contenedor */
   min-width: 100%;
   min-height: 100%;
