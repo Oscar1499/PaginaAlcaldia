@@ -1,0 +1,46 @@
+/* PantallaCarga.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50; /* Fondo azul oscuro */
+    z-index: 9999;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-around;
+    width: 60px; /* Reducir el ancho total */
+}
+
+.star {
+    width: 20px; /* Tamaño de las estrellas */
+    height: 20px; /* Tamaño de las estrellas */
+    background-color: white; /* Estrellas blancas */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: move 1s infinite alternate;
+}
+
+.star:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.star:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+

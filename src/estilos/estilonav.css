@@ -43,7 +43,7 @@ img {
   top: 10px;
   right: 10px;
   width: 120px;     /* Ancho del botón */
-  height: 30px;     /* Alto del botón */
+  height: 35px;     /* Alto del botón */
   cursor: pointer;  /* Para cambiar el cursor cuando se pasa sobre el botón */
   transition: opacity 0.3s ease;
   z-index: 200;     /* Asegura que el botón esté por encima de otros elementos */
