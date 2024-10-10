@@ -1,11 +1,13 @@
 import React from 'react';
-
+import BebetecaSlider from '../componentes/BebetecaSlider';
+import BebetecaContenido from '../componentes/BebetecaContenido';
 
 const Bebeteca = () => {
   return (
     <div className="page-content">
-      <h1>Bebeteca</h1>
-      <p>Contenido de la Bebeteca...</p>
+        <BebetecaSlider />
+        <BebetecaContenido />
+  
     </div>
   );
 };
