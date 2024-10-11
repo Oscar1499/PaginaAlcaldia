@@ -34,11 +34,12 @@ const NavbarComponent = () => {
 
               {/* Dropdown para las comunidades */}
               <NavDropdown title="Comunidades" id="comunidades-dropdown">
-                <NavDropdown.Item as={NavLink} to="/comunidades/bebeteca">Bebeteca</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/comunidades/consultas-generales">Clinica</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/comunidades/bebeteca">Bebetecas</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/comunidades/cda">CDA</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/comunidades/becas-universitarias">Becas Universitarias</NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to="/comunidades/consultas-generales">Consultas Generales</NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to="/comunidades/consultas-veterinarias">Consultas Veterinarias</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/comunidades/parques">Parque La Familia</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/comunidades/consultas-veterinarias">Veterinarias</NavDropdown.Item>
               </NavDropdown>
 
               {/* Otros enlaces del menú */}

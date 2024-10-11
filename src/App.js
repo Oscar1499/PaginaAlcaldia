@@ -28,8 +28,10 @@ import Tributario from './pages/Tributario';
 import LicenciasMatriculas from './pages/LicenciasMatriculas';
 import Juridicos from './pages/Juridicos';
 import Cementerio from './pages/Cementerio';
+import Parques from './pages/Parques';
 import AlbumNoticias from './componentes/AlbumNoticias';
-import PantallaCarga from './componentes/PantallaCarga'; 
+import PantallaCarga from './componentes/PantallaCarga';
+
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -81,6 +83,7 @@ const App = () => {
                     <Route path="/comunidades/cda" element={<CDA />} />
                     <Route path="/comunidades/becas-universitarias" element={<BecasUniversitarias />} />
                     <Route path="/comunidades/consultas-generales" element={<ConsultasGenerales />} />
+                    <Route path="/comunidades/parques" element={<Parques />} />
                     <Route path="/comunidades/consultas-veterinarias" element={<ConsultasVeterinarias />} />
 
                     {/* Rutas de servicios destacados */}

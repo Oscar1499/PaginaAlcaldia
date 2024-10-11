@@ -1,11 +1,12 @@
 import React from 'react';
-
+import BecasUniversitariasSlider from "../componentes/BecasUniversitariasSlider"
+import BecasUniversitariasContenido from "../componentes/BecasUniversitariasContenido"
 
 const BecasUniversitarias = () => {
   return (
     <div className="page-content">
-      <h1>Becas Universitarias</h1>
-      <p>Información sobre las becas universitarias disponibles...</p>
+     <BecasUniversitariasSlider />
+     <BecasUniversitariasContenido />
     </div>
   );
 };

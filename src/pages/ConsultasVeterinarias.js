@@ -1,10 +1,11 @@
 import React from 'react';
-
+import ConsultasVeterinariasSlider from '../componentes/ConsultasVeterinariasSlider';
+import ConsultasVeterinariasContenido from '../componentes/ConsultasVeterinariasContenido';
 const ConsultasVeterinarias = () => {
   return (
     <div className="page-content">
-      <h1>Consultas Veterinarias</h1>
-      <p>Información sobre los servicios de consultas veterinarias...</p>
+    <ConsultasVeterinariasSlider />
+    <ConsultasVeterinariasContenido />
     </div>
   );
 };

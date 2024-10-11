@@ -1,11 +1,12 @@
 import React from 'react';
+import CDAContenido from "../componentes/CDAContenido";
+import CDASlider from "../componentes/CDASlider";
 
 const CDA = () => {
   return (
     <div className="page-content">
-      {/* El contenido de la página CDA */}
-      <h1>Bienvenido a CDA</h1>
-      <p>Aquí va la información sobre el CDA...</p>
+      <CDASlider />
+     <CDAContenido />
     </div>
   );
 };

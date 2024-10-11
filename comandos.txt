@@ -6,6 +6,7 @@ npm install leaflet react-leaflet
 npm install react-slick slick-carousel
 npm install react-transition-group
 npm install react-scroll
+npm install @fortawesome/fontawesome-free
 
 
 

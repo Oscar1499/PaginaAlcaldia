@@ -1,11 +1,12 @@
 import React from 'react';
-
+import ConsultasGeneralesSlider from "../componentes/ConsultasGeneralesSlider"
+import ConsultasGeneralesContenido from '../componentes/ConsultasGeneralesContenido';
 const ConsultasGenerales = () => {
   return (
     <div className="page-content">
-      <h1>Consultas Generales</h1>
-      <p>Información sobre los servicios de consultas generales que se ofrecen...</p>
-    </div>
+      <ConsultasGeneralesSlider />
+      <ConsultasGeneralesContenido />
+</div>
   );
 };
 
