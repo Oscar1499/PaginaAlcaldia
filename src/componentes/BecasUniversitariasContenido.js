@@ -109,7 +109,7 @@ const BecaContenido = () => {
           >
             <div className="accordion-body">
               <p><strong>Ubicación: CDA La Union Centro, La Union</strong> .</p>
-              <p><strong>Horarios de Atención:</strong></p>
+              <p><strong>Horarios de Atención</strong></p>
               <ul>
                 <li>Lunes: 8:00 AM - 4:00 PM</li>
                 <li>Martes: 8:00 AM - 4:00 PM</li>
