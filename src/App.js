@@ -31,7 +31,7 @@ import Cementerio from './pages/Cementerio';
 import Parques from './pages/Parques';
 import AlbumNoticias from './componentes/AlbumNoticias';
 import PantallaCarga from './componentes/PantallaCarga';
-
+import NoticiaDetalles from './pages/NoticiaDetalles';  
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -76,6 +76,7 @@ const App = () => {
                     <Route path="/yayantique" element={<DistritoYayantique />} />
                     <Route path="/servicios" element={<Servicios />} />
                     <Route path="/noticias" element={<Noticias />} />
+                    <Route path="/noticiaDetalles/:id" element={<NoticiaDetalles />} />
                     <Route path="/tramites" element={<Tramites />} />
 
                     {/* Rutas de las opciones de Comunidades */}
