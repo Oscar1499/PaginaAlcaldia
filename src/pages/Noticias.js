@@ -1,16 +1,13 @@
 import React from 'react';
 
+// Cambiamos el nombre del componente para seguir las convenciones de React
+import NoticiasIndex from "../componentes/noticiasIndex.js";
+
 const Noticias = () => {
   return (
-     <div className="page-content" >
-      <h1>Noticias</h1>
-      <p>Aquí se mostrarán las últimas noticia
-        defaultfdsadsa
-        fafasdasdf
-        asfasfdfas
-        fasfadfasdfas
-        fasdfasfasdf
-        dsafsadfdsafas.</p>
+    <div className="page-content">
+      {/* Usamos el componente con la primera letra en mayúscula */}
+      <NoticiasIndex />
     </div>
   );
 };
