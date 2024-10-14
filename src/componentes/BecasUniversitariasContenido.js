@@ -10,6 +10,7 @@ import Beca6Image from '../assets/iconos/bebetecaslider3.jpeg';
 const BecaContenido = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenRequisitos, setIsOpenRequisitos] = useState(false);
+  const [isOpenDatosGenerales, setIsOpenDatosGenerales] = useState(false);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
@@ -17,6 +18,10 @@ const BecaContenido = () => {
 
   const toggleRequisitosAccordion = () => {
     setIsOpenRequisitos(!isOpenRequisitos);
+  };
+
+  const toggleDatosGeneralesAccordion = () => {
+    setIsOpenDatosGenerales(!isOpenDatosGenerales);
   };
 
   return (
@@ -77,6 +82,44 @@ const BecaContenido = () => {
             <div className="card-body">
               <h2 className="card-title">Beca de Investigación</h2>
               <p className="card-text">Apoyo a estudiantes que realizan proyectos de investigación en su área de estudio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Acordeón para Datos Generales */}
+      <div className="accordion mt-5" id="accordionDatosGenerales">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="headingDatosGenerales">
+            <button
+              className={`accordion-button ${isOpenDatosGenerales ? '' : 'collapsed'}`}
+              type="button"
+              onClick={toggleDatosGeneralesAccordion}
+              aria-expanded={isOpenDatosGenerales ? 'true' : 'false'}
+              aria-controls="collapseDatosGenerales"
+            >
+              <strong>Datos Generales</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseDatosGenerales"
+            className={`accordion-collapse collapse ${isOpenDatosGenerales ? 'show' : ''}`}
+            aria-labelledby="headingDatosGenerales"
+            data-bs-parent="#accordionDatosGenerales"
+          >
+            <div className="accordion-body">
+              <p><strong>Ubicación: CDA La Union Centro, La Union</strong> .</p>
+              <p><strong>Horarios de Atención:</strong></p>
+              <ul>
+                <li>Lunes: 8:00 AM - 4:00 PM</li>
+                <li>Martes: 8:00 AM - 4:00 PM</li>
+                <li>Miercoles: 8:00 AM - 4:00 PM</li>
+                <li>Jueves: 8:00 AM - 4:00 PM</li>
+                <li>Viernes: 8:00 AM - 4:00 PM</li>
+                <li>Sábados: Cerrado</li>
+                <li>Domingos: Cerrado</li>
+              </ul>
+              <p><strong>¡Visítanos y obtén más información!</strong></p>
             </div>
           </div>
         </div>
@@ -151,3 +194,4 @@ const BecaContenido = () => {
 };
 
 export default BecaContenido;
+
