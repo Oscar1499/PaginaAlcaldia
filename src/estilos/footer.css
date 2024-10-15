@@ -201,4 +201,11 @@ footer {
   }
 }
 
+.dark .footer-middle ul li {
+  color: #fff; /* Color blanco para el texto en modo oscuro */
+}
+
+.light .footer-middle ul li {
+  color: #333; /* Color oscuro para el texto en modo claro */
+}
 

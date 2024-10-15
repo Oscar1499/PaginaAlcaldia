@@ -23,7 +23,6 @@ import DistritoYucuaiquin from './pages/DistritoYucuaiquin';
 import DistritoYayantique from './pages/DistritoYayantique';
 import PortalTransparencia from './pages/PortalTransparencia';
 import ServiciosDestacados from './componentes/ServiciosDestacados';
-import RegistroFamiliar from './pages/RegistroFamiliar';
 import Tributario from './pages/Tributario';
 import LicenciasMatriculas from './pages/LicenciasMatriculas';
 import Juridicos from './pages/Juridicos';
@@ -32,6 +31,15 @@ import Parques from './pages/Parques';
 import AlbumNoticias from './componentes/AlbumNoticias';
 import PantallaCarga from './componentes/PantallaCarga';
 import NoticiaDetalles from './pages/NoticiaDetalles';  
+import TramitesContenido from './componentes/TramitesContenido';
+import TramitesLegales from './pages/Legales';
+import Constancias from './pages/Constancias';
+import Empresariales from './pages/Empresariales';
+import RegistroFamiliar from './pages/RegistroFamiliar';
+import Inmuebles from './pages/Inmuebles';
+import TramitesConstruccion from './pages/TramitesConstruccion';
+import TramitesCementerio from './pages/TramitesCementerio';
+import TramitesDelegacion from './pages/TramitesDelegacion';
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -78,6 +86,18 @@ const App = () => {
                     <Route path="/noticias" element={<Noticias />} />
                     <Route path="/noticiaDetalles/:id" element={<NoticiaDetalles />} />
                     <Route path="/tramites" element={<Tramites />} />
+
+                    {/* Rutas de las opciones de Tramites */}
+                    <Route path="/tramites" element={<TramitesContenido />} />
+                    <Route path="/tramites-legales" element={<TramitesLegales />} />
+                    <Route path="/constancias" element={<Constancias />} />
+                    <Route path="/empresariales" element={<Empresariales />} />
+                    <Route path="/registro-familiar" element={<RegistroFamiliar />} />
+                    <Route path="/inmuebles" element={<Inmuebles />} />
+                    <Route path="/tramites-construccion" element={<TramitesConstruccion />} />
+                    <Route path="/tramites-cementerio" element={<TramitesCementerio />} />
+                    <Route path="/tramites-delegacion" element={<TramitesDelegacion />} />
+                  
 
                     {/* Rutas de las opciones de Comunidades */}
                     <Route path="/comunidades/bebeteca" element={<Bebeteca />} />

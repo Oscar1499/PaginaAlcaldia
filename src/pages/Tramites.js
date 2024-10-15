@@ -1,10 +1,10 @@
 import React from 'react';
-
+import TramitesContenido from '../componentes/TramitesContenido';
 const Tramites = () => {
   return (
     <div className="page-content" >
-      <h1>Trámites</h1>
-      <p>Aquí se mostrarán los trámites disponibles.</p>
+      
+      <TramitesContenido />
     </div>
   );
 };
