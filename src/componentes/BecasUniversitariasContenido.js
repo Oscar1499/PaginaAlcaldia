@@ -87,10 +87,10 @@ const BecaContenido = () => {
         </div>
       </div>
 
-      {/* Acordeón para Datos Generales */}
-      <div className="accordion mt-5" id="accordionDatosGenerales">
+     {/* Acordeón para Datos Generales */}
+      <div className="accordion accordion-custom mt-5" id="accordionDatosGenerales">
         <div className="accordion-item">
-          <h2 className="accordion-header" id="headingDatosGenerales">
+          <h2 className="accordion-header" id="headingOne">
             <button
               className={`accordion-button ${isOpenDatosGenerales ? '' : 'collapsed'}`}
               type="button"
@@ -104,7 +104,7 @@ const BecaContenido = () => {
           <div
             id="collapseDatosGenerales"
             className={`accordion-collapse collapse ${isOpenDatosGenerales ? 'show' : ''}`}
-            aria-labelledby="headingDatosGenerales"
+            aria-labelledby="headingOne"
             data-bs-parent="#accordionDatosGenerales"
           >
             <div className="accordion-body">

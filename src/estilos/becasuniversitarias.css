@@ -131,7 +131,16 @@ p {
     border-radius: 5px;
     font-size: 1rem;
     line-height: 1.6;
+    transition: max-height 0.4s ease-in-out;
+    overflow: hidden;
 }
+.accordion-body.show {
+    max-height: 900px; /* Define un valor suficientemente grande */
+}
+.accordion-custom {
+    margin-top: 2rem; /* Ajusta el espacio superior como prefieras */
+  }
+  
 
 /* Estilo para el acordeón cuando está abierto */
 
@@ -225,7 +234,7 @@ p {
 
 /* Estilos generales para el acordeón */
 .accordion-item {
-    margin-bottom: 20px; /* Espacio entre los elementos del acordeón */
+    margin-bottom: 40px; /* Espacio entre los elementos del acordeón */
 }
 
 
