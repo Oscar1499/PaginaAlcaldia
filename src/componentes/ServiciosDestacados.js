@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import '../stiloglobal.css';
-
 import registroFamiliarIcon from '../assets/iconos/registro-familiar-icon.png';
 import tributarioIcon from '../assets/iconos/tributario-icon.png';
 import licenciasIcon from '../assets/iconos/licencias-icon.png';

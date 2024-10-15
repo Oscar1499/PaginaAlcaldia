@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import '../stiloglobal.css';
 import noticia1Icon from '../assets/iconos/noticia1-icon.jpeg'; 
 import noticia2Icon from '../assets/iconos/noticia2-icon.jpeg';
 import noticia3Icon from '../assets/iconos/noticia3-icon.jpeg';

@@ -40,23 +40,29 @@ import Inmuebles from './pages/Inmuebles';
 import TramitesConstruccion from './pages/TramitesConstruccion';
 import TramitesCementerio from './pages/TramitesCementerio';
 import TramitesDelegacion from './pages/TramitesDelegacion';
+import ScrollToTop from './componentes/ScrollToTop'; 
+import Contactenos from './pages/Contactenos';
+import Distritos from './pages/Distritos';
+import Institucion from './pages/Institucion';
 
 const App = () => {
     const [loading, setLoading] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
-        // Muestra la pantalla de carga al navegar
         setLoading(true);
         const timer = setTimeout(() => {
-            setLoading(false); // Oculta la pantalla de carga después de 1 segundo
-        }, 1000); // Cambia 1000 por el tiempo que desees
+            setLoading(false);
+        }, 1000); // Tiempo de carga del loader
 
-        return () => clearTimeout(timer); // Limpia el timer al desmontar
-    }, [location]); // Se activa cada vez que cambia la ruta
+        return () => clearTimeout(timer);
+    }, [location]);
 
     return (
         <div className="App">
+            {/* Componente para controlar el scroll */}
+            <ScrollToTop />
+
             {/* Barra de navegación */}
             <NavbarComponent />
 
@@ -64,63 +70,70 @@ const App = () => {
             {loading && <PantallaCarga />}
 
             {/* Layout principal */}
-            <Layout>
-                <Routes>
-                    {/* Página de Inicio */}
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/servicios-destacados" element={<ServiciosDestacados />} />
-                    <Route path="/" exact component={AlbumNoticias} />
-                    <Route path="/noticia1" element={<Noticias />} />
-                    <Route path="/noticia2" element={<Noticias />} />
-                    <Route path="/noticia3" element={<Noticias />} />
-                    <Route path="/mapa-oriente" element={<MapaOriente />} />
-                    <Route path="/alcaldia-la-union" element={<AlcaldiaLaUnion />} />
-                    <Route path="/meanguera" element={<DistritoMeanguera />} />
-                    <Route path="/conchagua" element={<DistritoConchagua />} />
-                    <Route path="/el-carmen" element={<DistritoElCarmen />} />
-                    <Route path="/intipuca" element={<DistritoIntipuca />} />
-                    <Route path="/san-alejo" element={<DistritoSanAlejo />} />
-                    <Route path="/yucuaiquin" element={<DistritoYucuaiquin />} />
-                    <Route path="/yayantique" element={<DistritoYayantique />} />
-                    <Route path="/servicios" element={<Servicios />} />
-                    <Route path="/noticias" element={<Noticias />} />
-                    <Route path="/noticiaDetalles/:id" element={<NoticiaDetalles />} />
-                    <Route path="/tramites" element={<Tramites />} />
+            {!loading && ( // El contenido solo se muestra si loading es false
+                <Layout>
+                    <Routes>
+                        {/* Página de Inicio */}
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/servicios-destacados" element={<ServiciosDestacados />} />
+                        <Route path="/" exact component={AlbumNoticias} />
+                        <Route path="/noticia1" element={<Noticias />} />
+                        <Route path="/noticia2" element={<Noticias />} />
+                        <Route path="/noticia3" element={<Noticias />} />
+                        <Route path="/mapa-oriente" element={<MapaOriente />} />
+                        <Route path="/alcaldia-la-union" element={<AlcaldiaLaUnion />} />
+                        <Route path="/meanguera" element={<DistritoMeanguera />} />
+                        <Route path="/conchagua" element={<DistritoConchagua />} />
+                        <Route path="/el-carmen" element={<DistritoElCarmen />} />
+                        <Route path="/intipuca" element={<DistritoIntipuca />} />
+                        <Route path="/san-alejo" element={<DistritoSanAlejo />} />
+                        <Route path="/yucuaiquin" element={<DistritoYucuaiquin />} />
+                        <Route path="/yayantique" element={<DistritoYayantique />} />
+                        <Route path="/servicios" element={<Servicios />} />
+                        <Route path="/noticias" element={<Noticias />} />
+                        <Route path="/noticiaDetalles/:id" element={<NoticiaDetalles />} />
+                        <Route path="/tramites" element={<Tramites />} />
 
-                    {/* Rutas de las opciones de Tramites */}
-                    <Route path="/tramites" element={<TramitesContenido />} />
-                    <Route path="/tramites-legales" element={<TramitesLegales />} />
-                    <Route path="/constancias" element={<Constancias />} />
-                    <Route path="/empresariales" element={<Empresariales />} />
-                    <Route path="/registro-familiar" element={<RegistroFamiliar />} />
-                    <Route path="/inmuebles" element={<Inmuebles />} />
-                    <Route path="/tramites-construccion" element={<TramitesConstruccion />} />
-                    <Route path="/tramites-cementerio" element={<TramitesCementerio />} />
-                    <Route path="/tramites-delegacion" element={<TramitesDelegacion />} />
-                  
+                        {/* Rutas de las opciones de Tramites */}
+                        <Route path="/tramites" element={<TramitesContenido />} />
+                        <Route path="/tramites-legales" element={<TramitesLegales />} />
+                        <Route path="/constancias" element={<Constancias />} />
+                        <Route path="/empresariales" element={<Empresariales />} />
+                        <Route path="/registro-familiar" element={<RegistroFamiliar />} />
+                        <Route path="/inmuebles" element={<Inmuebles />} />
+                        <Route path="/tramites-construccion" element={<TramitesConstruccion />} />
+                        <Route path="/tramites-cementerio" element={<TramitesCementerio />} />
+                        <Route path="/tramites-delegacion" element={<TramitesDelegacion />} />
 
-                    {/* Rutas de las opciones de Comunidades */}
-                    <Route path="/comunidades/bebeteca" element={<Bebeteca />} />
-                    <Route path="/comunidades/cda" element={<CDA />} />
-                    <Route path="/comunidades/becas-universitarias" element={<BecasUniversitarias />} />
-                    <Route path="/comunidades/consultas-generales" element={<ConsultasGenerales />} />
-                    <Route path="/comunidades/parques" element={<Parques />} />
-                    <Route path="/comunidades/consultas-veterinarias" element={<ConsultasVeterinarias />} />
+                        {/* Rutas de las opciones de Comunidades */}
+                        <Route path="/comunidades/bebeteca" element={<Bebeteca />} />
+                        <Route path="/comunidades/cda" element={<CDA />} />
+                        <Route path="/comunidades/becas-universitarias" element={<BecasUniversitarias />} />
+                        <Route path="/comunidades/consultas-generales" element={<ConsultasGenerales />} />
+                        <Route path="/comunidades/parques" element={<Parques />} />
+                        <Route path="/comunidades/consultas-veterinarias" element={<ConsultasVeterinarias />} />
 
-                    {/* Rutas de servicios destacados */}
-                    <Route path="/registro-familiar" element={<RegistroFamiliar />} />
-                    <Route path="/tributario" element={<Tributario />} />
-                    <Route path="/licencias-matriculas" element={<LicenciasMatriculas />} />
-                    <Route path="/juridicos" element={<Juridicos />} />
-                    <Route path="/cementerio" element={<Cementerio />} />
+                        {/* Rutas de servicios destacados */}
+                        <Route path="/registro-familiar" element={<RegistroFamiliar />} />
+                        <Route path="/tributario" element={<Tributario />} />
+                        <Route path="/licencias-matriculas" element={<LicenciasMatriculas />} />
+                        <Route path="/juridicos" element={<Juridicos />} />
+                        <Route path="/cementerio" element={<Cementerio />} />
 
-                    {/* Ruta para el Portal de Transparencia */}
-                    <Route path="/portaltransparencia" element={<PortalTransparencia />} />
+                        {/* Ruta para Instituciones*/}
+                        <Route path="/institucion" element={<Institucion />} />
+                        {/* Ruta para distritos */}
+                        <Route path="/distritos" element={<Distritos />} />
+                        {/* Ruta para contactenos */}
+                        <Route path="/contactenos" element={<Contactenos />} />
+                        {/* Ruta para el Portal de Transparencia */}
+                        <Route path="/portaltransparencia" element={<PortalTransparencia />} />
 
-                    {/* Página no encontrada */}
-                    <Route path="*" element={<h2>Página no encontrada</h2>} />
-                </Routes>
-            </Layout>
+                        {/* Página no encontrada */}
+                        <Route path="*" element={<h2>Página no encontrada</h2>} />
+                    </Routes>
+                </Layout>
+            )}
 
             {/* Footer */}
             <Footer />
@@ -135,5 +148,6 @@ const AppWithRouter = () => (
 );
 
 export default AppWithRouter;
+
 
 
