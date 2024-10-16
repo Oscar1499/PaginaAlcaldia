@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../estilos/acordeon.css";
 
-const TramitesDelegacionAcordeon = () => {
+const Acordeon = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -65,7 +65,7 @@ const TramitesDelegacionAcordeon = () => {
   return (
     <div className="acordeon">
       {/* Título con clase "titulo" */}
-      <h2 className="titulo">Trámites Legales</h2>
+      <h2 className="titulo">Trámites</h2>
       
       {/* Mapeo de secciones */}
       {sections.map((section, index) => (
@@ -85,4 +85,5 @@ const TramitesDelegacionAcordeon = () => {
   );
 };
 
-export default TramitesDelegacionAcordeon;
+export default Acordeon;
+

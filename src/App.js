@@ -44,6 +44,44 @@ import ScrollToTop from './componentes/ScrollToTop';
 import Contactenos from './pages/Contactenos';
 import Distritos from './pages/Distritos';
 import Institucion from './pages/Institucion';
+import DiligenciaVoluntaria from './pages/DiligenciaVoluntaria';
+import DiligenciaSubsidiario from './pages/DiligenciaSubsidiario';
+import AsociacionesComunales from './pages/AsociacionesComunales';
+import TituloPropiedad from './pages/TituloPropiedad';
+import ConstanciaCatastral from './pages/ConstanciaCatastral';
+import ConstanciaInscripcion from './pages/ConstanciaInscripcion';
+import ConstanciaCementerios from './pages/ConstanciaCementerios';
+import ConstanciaMunicipal from './pages/ConstanciaMunicipal';
+import ConstanciaVarias from './pages/ConstanciaVarias';
+import PermisosPublicitarios from './pages/PermisosPublicitarios';
+import Vialidades from './pages/Vialidades';
+import LicenciaOperaciones from './pages/LicenciaOperaciones';
+import RenovacionPermanencia from './pages/RenovacionPermanencia';
+import LicenciaPublicitaria from './pages/LicenciaPublicitaria';
+import EstadoCuenta from './pages/EstadoCuenta';
+import SolvenciaGeneral from './pages/SolvenciaGeneral';
+import PlanesPago from './pages/PlanesPago';
+import ConceptoNegocio from './pages/ConceptoNegocio';
+import CalificacionesOficio from './pages/CalificacionesOficio';
+import InscripcionMandato from './pages/InscripcionMandato';
+import TraspasosInmuebles from './pages/TraspasosInmuebles';
+import TraspasoHerencia from './pages/TraspasoHerencia';
+import EmisionCertificacionPartidas from './pages/EmisionCertificacionPartidas';
+import EmisionAutenticaPartidas from './pages/EmisionAutenticaPartidas';
+import CarnetIdentificacionPersonal from './pages/CarnetIdentificacionPersonal';
+import ConstanciasFichasCedulas from './pages/ConstanciasFichasCedulas';
+import RecepcionDocumentos from './pages/RecepcionDocumentos';
+import AsentamientoNacimiento from './pages/AsentamientoNacimiento';
+import AsentamientoDefuncion from './pages/AsentamientoDefuncion';
+import ReposicionTitulo from './pages/ReposicionTitulo';
+import PermisoConstruccion from './pages/PermisoConstruccion';
+import FacilidadProyecto from './pages/FacilidadProyecto';
+import RecepcionProyectos from './pages/RecepcionProyectos';
+import DemolicionNaturaleza from './pages/DemolicionNaturaleza';
+import Denuncia from './pages/Denuncia';
+import Mediacion from './pages/Mediacion';
+import ApelacionEsquela from './pages/ApelacionEsquela';
+import DevolucionDecomisos from './pages/DevolucionDecomisos';
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -119,6 +157,46 @@ const App = () => {
                         <Route path="/licencias-matriculas" element={<LicenciasMatriculas />} />
                         <Route path="/juridicos" element={<Juridicos />} />
                         <Route path="/cementerio" element={<Cementerio />} />
+                        {/* Ruta para Seccion de Tramites */}
+                        <Route path="/" element={<TramitesLegales />} />
+                        <Route path="/diligencia-voluntaria" element={<DiligenciaVoluntaria />} />
+                        <Route path="/diligencia-subsidiario" element={<DiligenciaSubsidiario />} />
+                        <Route path="/asociaciones-comunales" element={<AsociacionesComunales />} />
+                        <Route path="/titulo-propiedad" element={<TituloPropiedad />} />
+                        <Route path="/constancia-catastral" element={<ConstanciaCatastral />} />
+                        <Route path="/constancia-inscripcion" element={<ConstanciaInscripcion />} />
+                        <Route path="/constancia-cementerios" element={<ConstanciaCementerios />} />
+                        <Route path="/constancia-municipal" element={<ConstanciaMunicipal />} />
+                        <Route path="/constancia-varias" element={<ConstanciaVarias />} />
+                        <Route path="/permisos-publicitarios" element={<PermisosPublicitarios />} />
+                        <Route path="/vialidades" element={<Vialidades />} />
+                        <Route path="/licencia-operaciones" element={<LicenciaOperaciones />} />
+                        <Route path="/renovacion-permanencia" element={<RenovacionPermanencia />} />
+                        <Route path="/licencia-publicitaria" element={<LicenciaPublicitaria />} />
+                        <Route path="/estado-cuenta" element={<EstadoCuenta />} />
+                        <Route path="/solvencia-general" element={<SolvenciaGeneral />} />
+                        <Route path="/planes-pago" element={<PlanesPago />} />
+                        <Route path="/concepto-negocio" element={<ConceptoNegocio />} />
+                        <Route path="/calificaciones-oficio" element={<CalificacionesOficio />} />
+                        <Route path="/inscripcion-mandato" element={<InscripcionMandato />} />
+                        <Route path="/traspasos-inmuebles" element={<TraspasosInmuebles />} />
+                        <Route path="/traspaso-herencia" element={<TraspasoHerencia />} />
+                        <Route path="/emision-certificacion-partidas" element={<EmisionCertificacionPartidas />} />
+                        <Route path="/emision-autentica-partidas" element={<EmisionAutenticaPartidas />} />
+                        <Route path="/carnet-identificacion-personal" element={<CarnetIdentificacionPersonal />} />
+                        <Route path="/constancias-fichas-cedulas" element={<ConstanciasFichasCedulas />} />
+                        <Route path="/recepcion-documentos" element={<RecepcionDocumentos />} />
+                        <Route path="/asentamiento-nacimiento" element={<AsentamientoNacimiento />} />
+                        <Route path="/asentamiento-defuncion" element={<AsentamientoDefuncion />} />
+                        <Route path="/reposicion-titulo" element={<ReposicionTitulo />} />
+                        <Route path="/permiso-construccion" element={<PermisoConstruccion />} />
+                        <Route path="/facilidad-proyecto" element={<FacilidadProyecto />} />
+                        <Route path="/recepcion-proyectos" element={<RecepcionProyectos />} />
+                        <Route path="/demolicion-naturaleza" element={<DemolicionNaturaleza />} />
+                        <Route path="/denuncia" element={<Denuncia />} />
+                        <Route path="/mediacion" element={<Mediacion />} />
+                        <Route path="/apelacion-esquela" element={<ApelacionEsquela />} />
+                        <Route path="/devolucion-decomisos" element={<DevolucionDecomisos />} />
 
                         {/* Ruta para Instituciones*/}
                         <Route path="/institucion" element={<Institucion />} />
