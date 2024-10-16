@@ -29,7 +29,7 @@ const Constancias = () => {
         </Link>
         <Link to="/constancia-varias" className="tramite-boton">
           <FaClipboardList className="icon" />
-          Constancia Varias
+          Constancia ANDA
         </Link>
       </div>
     </div>
