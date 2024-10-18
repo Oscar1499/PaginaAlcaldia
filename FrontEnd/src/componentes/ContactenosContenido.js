@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios'; 
-import '../stiloglobal.css';
+import axios from 'axios';
+import '../estilos/contactenos.css';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; 
 
 const ContactenosContenido = () => {
   const [formData, setFormData] = useState({
@@ -9,8 +10,6 @@ const ContactenosContenido = () => {
     telefono: '',
     mensaje: '',
   });
-
-  const [showContactInfo, setShowContactInfo] = useState(true); // Estado para controlar la visibilidad
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,83 +29,100 @@ const ContactenosContenido = () => {
       alert('Hubo un problema al enviar tu mensaje. Intenta nuevamente más tarde.');
     }
   };
-
-  const toggleSection = () => {
-    setShowContactInfo(!showContactInfo); // Alternar la sección mostrada
-  };
-
+ 
   return (
     <div className="contactenos-contenido">
       <h1>Contáctenos</h1>
-      <p>
-        Si tiene alguna consulta, comentario o sugerencia, no dude en ponerse en contacto con nosotros. 
-        Su opinión es muy importante para nosotros y nos ayudará a mejorar nuestros servicios.
-      </p>
 
-      <button className="toggle-button" onClick={toggleSection}>
-        {showContactInfo ? 'Mostrar Formulario' : 'Mostrar Información de Contacto'}
-      </button>
-
-      {showContactInfo ? (
-        <div className="contact-info">
-          <h2>Información de Contacto</h2>
-          <p><strong>Teléfono:</strong> +503 7889-8924</p>
-          <p><strong>Email:</strong> contacto@alcaldialaunion.gob.sv</p>
-          <p><strong>Dirección:</strong> Avenida Gral Cabañas, La Unión, El Salvador</p>
+      <div className="contact-form-container">
+        <div className="contact-info-left">
+          <div className="contact-info-item">
+            <FaEnvelope />
+            <span>correo@alcaldialaunion.gob.sv</span>
+          </div>
+          <div className="contact-info-item">
+            <FaPhone />
+            <span>+503 26097000</span>
+          </div>
+          <div className="contact-info-item">
+            <FaMapMarkerAlt />
+            <span>Avenida Gral Cabañas, La Unión</span>
+          </div>
+          <div className="social-icons">
+            <div className="social-title">Redes Sociales:</div>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebook />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="mailto:correo@alcaldialaunion.gob.sv" target="_blank" rel="noopener noreferrer">
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
-      ) : (
+
         <form className="contact-form" onSubmit={handleSubmit}>
-          <h2>Formulario de Contacto</h2>
+          <h2>Solicitud</h2>
           <div className="form-group">
-            <label htmlFor="nombre">Nombre</label>
             <input 
               type="text" 
               id="nombre" 
               name="nombre" 
               value={formData.nombre} 
               onChange={handleChange} 
+              placeholder="Nombre" 
               required 
+              className="rounded-input"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="correo">Correo Electrónico</label>
             <input 
               type="email" 
               id="correo" 
               name="correo" 
               value={formData.correo} 
               onChange={handleChange} 
+              placeholder="Correo Electrónico" 
               required 
+              className="rounded-input"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="telefono">Teléfono</label>
             <input 
               type="tel" 
               id="telefono" 
               name="telefono" 
               value={formData.telefono} 
               onChange={handleChange} 
+              placeholder="Teléfono" 
               required 
+              className="rounded-input"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="mensaje">Mensaje</label>
             <textarea 
               id="mensaje" 
               name="mensaje" 
               value={formData.mensaje} 
               onChange={handleChange} 
+              placeholder="Mensaje" 
               rows="4" 
               required 
+              className="rounded-input"
             />
           </div>
           <button type="submit" className="btn-submit">Enviar Mensaje</button>
         </form>
-      )}
+      </div>
     </div>
   );
 };
 
 export default ContactenosContenido;
+
+
 

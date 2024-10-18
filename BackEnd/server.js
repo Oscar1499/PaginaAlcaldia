@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// configuración del transporte SMTP
+//configuración del transporte SMTP
 const transporter = nodemailer.createTransport({
     host: 'mail.alcaldialaunion.gob.sv',
     port: 465, // 465 si es SSL o 587

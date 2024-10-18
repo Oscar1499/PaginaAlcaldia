@@ -82,6 +82,9 @@ import Denuncia from './pages/Denuncia';
 import Mediacion from './pages/Mediacion';
 import ApelacionEsquela from './pages/ApelacionEsquela';
 import DevolucionDecomisos from './pages/DevolucionDecomisos';
+import RegresarButton from './componentes/RegresarButton';
+
+
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -133,6 +136,8 @@ const App = () => {
                         <Route path="/tramites" element={<Tramites />} />
 
                         {/* Rutas de las opciones de Tramites */}
+                    
+
                         <Route path="/tramites" element={<TramitesContenido />} />
                         <Route path="/tramites-legales" element={<TramitesLegales />} />
                         <Route path="/constancias" element={<Constancias />} />
@@ -142,7 +147,7 @@ const App = () => {
                         <Route path="/tramites-construccion" element={<TramitesConstruccion />} />
                         <Route path="/tramites-cementerio" element={<TramitesCementerio />} />
                         <Route path="/tramites-delegacion" element={<TramitesDelegacion />} />
-
+                    
                         {/* Rutas de las opciones de Comunidades */}
                         <Route path="/comunidades/bebeteca" element={<Bebeteca />} />
                         <Route path="/comunidades/cda" element={<CDA />} />
@@ -209,7 +214,9 @@ const App = () => {
 
                         {/* Página no encontrada */}
                         <Route path="*" element={<h2>Página no encontrada</h2>} />
+                        
                     </Routes>
+                    <RegresarButton />
                 </Layout>
             )}
 

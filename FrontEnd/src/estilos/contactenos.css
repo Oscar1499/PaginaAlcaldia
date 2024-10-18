@@ -1,0 +1,158 @@
+.contactenos-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px; /* Espacio superior para separar del contenido */
+}
+
+.contact-info-left {
+  flex: 1;
+  margin-right: 10px; /* Menor margen para acercar las partes */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
+}
+
+.contact-info-left:hover {
+  transform: scale(1.02); /* Efecto de aumento al pasar el ratón */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info-item svg {
+  margin-right: 8px;
+  color: #4A90E2; /* Cambia el color según prefieras */
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #4A90E2; /* Cambia el color según prefieras */
+  font-size: 24px;
+  transition: color 0.2s ease; /* Transición suave de color */
+}
+
+.social-icons a:hover {
+  color: #357ABD; /* Cambio de color al pasar el ratón */
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
+}
+
+.contact-form:hover {
+  transform: scale(1.02); /* Efecto de aumento al pasar el ratón */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.rounded-input {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #4A90E2;
+  padding: 10px;
+  transition: border 0.2s ease; /* Transición suave para el borde */
+}
+
+.rounded-input:focus {
+  border-color: #357ABD; /* Color del borde al hacer foco */
+  outline: none; /* Quitar el contorno predeterminado */
+}
+
+.btn-submit {
+  background-color: #4A90E2; /* Cambia el color según prefieras */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Transición suave del botón */
+}
+
+.btn-submit:hover {
+  background-color: #357ABD; /* Cambia el color según prefieras */
+}
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+  
+  .contact-info-item:hover {
+    color: #4A90E2; /* Cambia el color al pasar el mouse */
+  }
+  
+  .social-icons {
+    display:table-row;
+    flex-direction:row;
+  }
+  
+  .social-title {
+    font-weight:400;
+    margin-bottom: 5px; /* Espacio entre el título y los íconos */
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+  
+  .social-icons a {
+    margin-right: 10px; /* Espacio entre los íconos */
+    transition: color 0.3s ease; /* Transición suave para el color del ícono */
+  }
+  
+  .social-icons a:hover {
+    color: rgb(1, 10, 75); /* Cambia el color del ícono al pasar el mouse */
+  }
+  
+  /* Agrega esto a los estilos de tu botón de envío */
+  .btn-submit {
+    transition: background-color 0.3s ease; /* Transición suave para el botón */
+  }
+  
+  .btn-submit:hover {
+    background-color: rgb(1, 10, 75); /* Cambia el color del botón al pasar el mouse */
+  }
+
+   h2 {
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #4A90E2; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-transform: uppercase; /* Hacer el texto en mayúsculas */
+    letter-spacing: 2px; /* Espacio entre letras */
+    font-weight: 400; /* Negrita */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  }
+
+  
+  
+  
+  
+  
+
