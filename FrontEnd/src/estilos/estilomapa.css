@@ -1,0 +1,59 @@
+/* Estilos generales del mapa */
+.leaflet-container {
+  border: 2px solid #007bff; /* Borde azul alrededor del mapa */
+  border-radius: 10px; /* Esquinas redondeadas */
+  height: 40%; 
+  width: 100%; /* Asegura que ocupe el 100% del contenedor */
+}
+
+/* Estilos del popup del marcador */
+.leaflet-popup {
+  background-color: #f8f9fa; /* Fondo claro para el popup */
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  padding: 10px; /* Espaciado interno */
+  max-width: 300px; /* Limitar el ancho del popup */
+  font-size: 14px; /* Establecer tamaño de fuente para contenido */
+}
+
+/* Estilo para el título del popup */
+.leaflet-popup-content {
+  font-size: 16px; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Negrita para el título */
+  color: #343a40; /* Color del texto */
+  margin-bottom: 8px; /* Espacio entre el título y el texto */
+}
+
+/* Estilo para el texto dentro del popup */
+.leaflet-popup-content-wrapper {
+  padding: 5px; /* Espaciado interno */
+}
+
+/* Estilo para los botones del popup */
+.leaflet-popup-tip {
+  background: #f8f9fa; /* Color de fondo de la punta */
+  border-color: #f8f9fa; /* Aseguramos que la punta tenga el mismo color */
+}
+
+/* Estilo de hover para el marcador */
+.leaflet-marker-icon:hover {
+  transform: scale(1.1); /* Aumentar el tamaño del icono al pasar el ratón */
+  transition: transform 0.3s ease; /* Transición suave */
+  cursor: pointer; /* Mostrar un cursor de mano al pasar el ratón */
+}
+
+.map-container {
+  width: 100%; /* Cambiar a 100% para evitar desbordamiento */
+  height: calc(40vw * 9 / 16); /* Mantiene un aspecto de 16:9 */
+  margin: 0 auto; /* Centra el contenedor */
+  border: 2px solid #007bff; /* Borde azul */
+  border-radius: 10px; /* Esquinas redondeadas */
+  overflow: hidden; /* Oculta el desbordamiento */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+
+
+
+
+
