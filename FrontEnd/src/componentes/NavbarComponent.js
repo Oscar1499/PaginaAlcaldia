@@ -14,14 +14,19 @@ const NavbarComponent = () => {
         <div className="image-container">
           <img src={logoImage} alt="Logo" className="header-logo" />
           {/* Botón en la esquina superior derecha */}
-          <img 
-            src={portalImage} 
-            alt="Portal de Transparencia" 
-            className="portal-button" 
-            onClick={() => window.location.href = '/portaltransparencia'} 
-          />
+          <a 
+            href="https://portal.alcaldialaunion.gob.sv/transparencia" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src={portalImage} 
+              alt="Portal de Transparencia" 
+              className="portal-button" 
+            />
+          </a>
         </div>
-
+    
         {/* Barra de navegación */}
         <Navbar className="navbar-custom" bg="dark" variant="dark" expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
