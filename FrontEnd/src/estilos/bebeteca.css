@@ -25,14 +25,16 @@ p {
 .carousel-rtl {
     direction: rtl;
 }
+
 /* Estilos del contenedor del slider */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Incluye el padding y border dentro de las medidas del elemento */
 }
+
 .slider-container {
-    width: 100%; /* El contenedor ocupa el 40% del ancho de la ventana */
+    width: 100%; /* El contenedor ocupa el 100% del ancho de la ventana */
     height: 70vh;
     margin: 0 auto; /* Centrado en la pantalla */
     overflow: hidden; /* Oculta el contenido que sobresalga */
@@ -45,9 +47,16 @@ p {
     left: auto;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mayor legibilidad */
     padding: 10px;
-    
     border-radius: 5px; /* Bordes redondeados para las descripciones */
 }
+
+.bebeteca-container {
+    margin: 0; /* Asegúrate de que no haya márgenes */
+    padding: 0; /* Asegúrate de que no haya paddings */
+    display: flex; /* O usa block si lo prefieres */
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+}
+
 
 /* Estilos para las tarjetas */
 .card {
@@ -88,11 +97,12 @@ p {
 .btn-primary:hover {
     background-color: #357ABD; /* Color al hacer hover */
 }
+
 /* Estilo general del acordeón */
 .accordion-button {
-    background-color: #4A90E2;  /* Color de fondo azul */
-    color: white;  /* Texto blanco */
-    border: none;  /* Sin bordes */
+    background-color: #4A90E2; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
     border-radius: 5px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -100,13 +110,13 @@ p {
 }
 
 .accordion-button:hover {
-    background-color: #357ABD;  /* Cambio de color al pasar el mouse */
+    background-color: #357ABD; /* Cambio de color al pasar el mouse */
 }
 
 /* Estilo para el cuerpo del acordeón */
 .accordion-body {
-    background-color: #f9f9f9;  /* Fondo gris claro */
-    color: #333;  /* Texto oscuro para mejor legibilidad */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #333; /* Texto oscuro para mejor legibilidad */
     padding: 20px;
     border-radius: 5px;
     font-size: 1rem;
@@ -115,7 +125,7 @@ p {
 
 /* Estilo para el acordeón cuando está abierto */
 .accordion-button:not(.collapsed) {
-    background-color: #357ABD;  /* Fondo azul oscuro cuando está abierto */
+    background-color: #357ABD; /* Fondo azul oscuro cuando está abierto */
 }
 
 /* Estilos para la lista de requisitos */
@@ -143,8 +153,8 @@ p {
 
 /* Estilos para los puntos (íconos de la lista) */
 .accordion-body li::before {
-    content: "•";  /* Símbolo de punto */
-    color: #4A90E2;  /* Color azul */
+    content: "•"; /* Símbolo de punto */
+    color: #4A90E2; /* Color azul */
     font-size: 1.5rem; /* Tamaño más grande y elegante */
     position: absolute; /* Posiciona el punto en el margen izquierdo */
     left: 0; /* Alinea el punto a la izquierda */
@@ -163,7 +173,7 @@ p {
 }
 
 .accordion-body ol li {
-    list-style-type: decimal;  /* Números en las listas ordenadas */
+    list-style-type: decimal; /* Números en las listas ordenadas */
     padding-left: 10px;
 }
 
@@ -181,6 +191,44 @@ p {
 .accordion-body li:last-child {
     border-bottom: none; /* Eliminar borde de la última lista */
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reducir tamaño del título en pantallas pequeñas */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Espacio entre tarjetas */
+    }
+
+    .btn-primary {
+        width: 100%; /* Botón ocupa el 100% del ancho en móviles */
+    }
+
+    .accordion-button {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .accordion-body {
+        font-size: 0.9rem; /* Texto más pequeño en móviles */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px; /* Reducir padding en dispositivos muy pequeños */
+    }
+
+    .slider-container {
+        height: 50vh; /* Ajustar altura del slider en móviles */
+    }
+
+    .card-img-top {
+        height: 150px; /* Reducir altura de las imágenes de las tarjetas */
+    }
+}
+
 
 
 

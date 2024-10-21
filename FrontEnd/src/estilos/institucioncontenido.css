@@ -151,7 +151,7 @@ h2 {
 /* Responsivo */
 @media (max-width: 768px) {
   p {
-    text-align: left !important;
+    text-align:left !important;
 }
   .tarjetas {
     flex-direction: column;

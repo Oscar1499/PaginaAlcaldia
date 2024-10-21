@@ -99,56 +99,101 @@
 .btn-submit:hover {
   background-color: #357ABD; /* Cambia el color según prefieras */
 }
+
 .contact-info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    transition: color 0.3s ease; /* Transición suave para el color del texto */
-  }
-  
-  .contact-info-item:hover {
-    color: #4A90E2; /* Cambia el color al pasar el mouse */
-  }
-  
-  .social-icons {
-    display:table-row;
-    flex-direction:row;
-  }
-  
-  .social-title {
-    font-weight:400;
-    margin-bottom: 5px; /* Espacio entre el título y los íconos */
-    transition: color 0.3s ease; /* Transición suave para el color del texto */
-  }
-  
-  .social-icons a {
-    margin-right: 10px; /* Espacio entre los íconos */
-    transition: color 0.3s ease; /* Transición suave para el color del ícono */
-  }
-  
-  .social-icons a:hover {
-    color: rgb(1, 10, 75); /* Cambia el color del ícono al pasar el mouse */
-  }
-  
-  /* Agrega esto a los estilos de tu botón de envío */
-  .btn-submit {
-    transition: background-color 0.3s ease; /* Transición suave para el botón */
-  }
-  
-  .btn-submit:hover {
-    background-color: rgb(1, 10, 75); /* Cambia el color del botón al pasar el mouse */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.contact-info-item:hover {
+  color: #4A90E2; /* Cambia el color al pasar el mouse */
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-title {
+  font-weight: 400;
+  margin-bottom: 5px; /* Espacio entre el título y los íconos */
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.social-icons a {
+  margin-right: 10px; /* Espacio entre los íconos */
+  transition: color 0.3s ease; /* Transición suave para el color del ícono */
+}
+
+.social-icons a:hover {
+  color: rgb(1, 10, 75); /* Cambia el color del ícono al pasar el mouse */
+}
+
+/* Agrega esto a los estilos de tu botón de envío */
+.btn-submit {
+  transition: background-color 0.3s ease; /* Transición suave para el botón */
+}
+
+.btn-submit:hover {
+  background-color: rgb(1, 10, 75); /* Cambia el color del botón al pasar el mouse */
+}
+
+h2 {
+  font-size: 1.5rem; /* Tamaño del texto */
+  color: #4A90E2; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  text-transform: uppercase; /* Hacer el texto en mayúsculas */
+  letter-spacing: 2px; /* Espacio entre letras */
+  font-weight: 400; /* Negrita */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+    align-items: center; /* Centrar elementos */
   }
 
-   h2 {
-    font-size: 1.5rem; /* Tamaño del texto */
-    color: #4A90E2; /* Color del texto */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    text-transform: uppercase; /* Hacer el texto en mayúsculas */
-    letter-spacing: 2px; /* Espacio entre letras */
-    font-weight: 400; /* Negrita */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  .contact-info-left {
+    margin-right: 0; /* Quitar margen derecho */
+    margin-bottom: 20px; /* Añadir margen inferior para separación */
   }
+
+  .contact-form {
+    margin-top: 20px; /* Añadir espacio entre los dos contenedores */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Reducir tamaño de fuente del título */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-left {
+    padding: 15px; /* Reducir espaciado interno */
+  }
+
+  .contact-form {
+    padding: 60px; /* Reducir espaciado interno */
+  }
+
+  .rounded-input {
+    padding: 8px; /* Reducir espaciado interno de los inputs */
+  }
+
+  .btn-submit {
+    padding: 8px 16px; /* Ajustar tamaño del botón */
+  }
+
+  h2 {
+    font-size: 1rem; /* Reducir aún más el tamaño de la fuente del título */
+  }
+}
+
 
   
   

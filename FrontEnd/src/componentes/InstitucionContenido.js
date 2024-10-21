@@ -17,7 +17,7 @@ const InstitucionContenido = () => {
           <p>
             La Alcaldesa Victoria Gutiérrez cuenta con más de 10 años de experiencia en el servicio público. 
             Su compromiso con el desarrollo sostenible y la participación ciudadana ha llevado a implementar 
-            importantes iniciativas que benefician a la comunidad, como el programa de desechos solidos, para los distintos distritos,S etc.
+            importantes iniciativas que benefician a la comunidad, como el programa de desechos solidos, para los distintos distritos, etc.
           </p>
           <p>
             Ha liderado proyectos de infraestructura y programas para fortalecer la economía local, 

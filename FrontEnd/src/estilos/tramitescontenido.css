@@ -14,14 +14,10 @@
     margin-bottom: 30px; /* Espaciado inferior del header aumentado */
 }
 
-
-
-
 .tramites-container {
     text-align: center;
     padding: 20px;
 }
-
 
 .header h1 {
     color: #fff; /* Color del texto */
@@ -59,3 +55,50 @@
     transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
 }
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .tramites-wrapper {
+        padding: 40px; /* Reducir espaciado interno en pantallas más pequeñas */
+        margin: 10px; /* Reducir margen en pantallas más pequeñas */
+    }
+
+    .header {
+        padding: 20px; /* Reducir espaciado interno del header */
+    }
+
+    .header h1 {
+        font-size: 2rem; /* Reducir tamaño de la fuente */
+    }
+
+    .tramite-boton {
+        font-size: 0.9rem; /* Reducir tamaño de la fuente de los botones */
+        padding: 8px 16px; /* Reducir espaciado interno de los botones */
+    }
+
+    .icon {
+        font-size: 1.2rem; /* Reducir tamaño del icono */
+    }
+}
+
+@media (max-width: 480px) {
+    .tramites-wrapper {
+        padding: 20px; /* Ajustar más el espaciado interno */
+    }
+
+    .header {
+        padding: 15px; /* Ajustar espaciado interno del header */
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño de la fuente */
+    }
+
+    .tramite-boton {
+        font-size: 0.8rem; /* Tamaño de la fuente más pequeño para botones */
+        padding: 6px 12px; /* Ajustar espaciado interno de los botones */
+    }
+
+    .icon {
+        font-size: 1rem; /* Reducir tamaño del icono */
+    }
+}
