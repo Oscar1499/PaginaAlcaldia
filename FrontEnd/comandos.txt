@@ -7,6 +7,14 @@ npm install react-slick slick-carousel
 npm install react-transition-group
 npm install react-scroll
 npm install @fortawesome/fontawesome-free
+npm install axios (front end)
+backend{
+npm install cors
+npm install express
+npm install nodemailer 
+npm init -y
+npm install express nodemailer dotenv body-parser}
+
 
 
 

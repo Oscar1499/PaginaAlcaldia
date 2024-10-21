@@ -1,6 +1,6 @@
 /* Estilos generales del mapa */
 .leaflet-container {
-  border: 2px solid #007bff; /* Borde azul alrededor del mapa */
+  border: 2px solid #e7eef6; /* Borde azul alrededor del mapa */
   border-radius: 10px; /* Esquinas redondeadas */
   height: 40%; 
   width: 100%; /* Asegura que ocupe el 100% del contenedor */
@@ -46,10 +46,11 @@
   width: 100%; /* Cambiar a 100% para evitar desbordamiento */
   height: calc(40vw * 9 / 16); /* Mantiene un aspecto de 16:9 */
   margin: 0 auto; /* Centra el contenedor */
-  border: 2px solid #007bff; /* Borde azul */
+  border: 2px solid #ecf4fc; /* Borde azul */
   border-radius: 10px; /* Esquinas redondeadas */
   overflow: hidden; /* Oculta el desbordamiento */
   box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+ 
 }
 
 
