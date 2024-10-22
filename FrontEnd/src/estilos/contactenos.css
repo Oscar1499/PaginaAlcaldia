@@ -134,6 +134,7 @@
 /* Agrega esto a los estilos de tu botón de envío */
 .btn-submit {
   transition: background-color 0.3s ease; /* Transición suave para el botón */
+  border-radius: 18px;
 }
 
 .btn-submit:hover {

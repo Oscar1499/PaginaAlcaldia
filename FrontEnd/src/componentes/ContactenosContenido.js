@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../estilos/contactenos.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; 
+import Swal from 'sweetalert2'
+
 
 const ContactenosContenido = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +12,7 @@ const ContactenosContenido = () => {
     telefono: '',
     mensaje: '',
   });
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,12 +25,20 @@ const ContactenosContenido = () => {
     try {
       const response = await axios.post('http://localhost:3001/contact', formData);
       console.log('Respuesta del servidor:', response.data);
-      alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+      Swal.fire({
+        title: "Excelente",
+        text: "Su correo a sido enviado!",
+        icon: "success"
+      });
       setFormData({ nombre: '', correo: '', telefono: '', mensaje: '' });
     } catch (error) {
       console.error('Error al enviar el mensaje:', error);
-      alert('Hubo un problema al enviar tu mensaje. Intenta nuevamente más tarde.');
-    }
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Contacte con un administrador!",
+        
+      });}
   };
  
   return (
