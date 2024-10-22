@@ -9,6 +9,17 @@ footer {
   width: 100%;
 }
 
+.footer-middle ul li a,
+.footer-middle ul li a:visited {
+  text-decoration: none;  /* Elimina el subrayado */
+  color: inherit;         /* Hereda el color del texto, o especifica un color */
+}
+
+.footer-middle ul li a:hover {
+  color: #4A90E2;         /* Cambia el color al pasar el mouse */
+  text-decoration: underline; /* Subrayado al pasar el mouse (opcional) */
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -135,9 +146,43 @@ footer {
 .dark .social-icons a:hover {
   color: #ddd;
 }
+/* Modo claro - color de los íconos por defecto */
+footer.light .social-icons a i {
+  color: #555; /* Color predeterminado de los iconos en modo claro */
+}
+
+/* Modo claro - hover sobre los íconos */
+footer.light .social-icons a:hover i {
+  color: #000; /* Cambia el color a negro cuando pasas el mouse en modo claro */
+}
+
+/* Modo oscuro - color de los íconos por defecto */
+footer.dark .social-icons a i {
+  color: #fff; /* Color predeterminado de los iconos en modo oscuro */
+}
+
+/* Modo oscuro - hover sobre los íconos */
+footer.dark .social-icons a:hover i {
+  color: #090664; /* Cambia el color a negro cuando pasas el mouse en modo oscuro */
+}
 
 .dark .footer-bottom {
   border-color: #555;
+}
+footer.dark .footer-left h2, 
+footer.dark .footer-left p,
+footer.dark .social-icons a {
+  color: var(--text-color-dark);
+}
+
+
+footer.light h3 {
+  color: #333; 
+}
+
+
+footer.dark h3 {
+  color: #fff; 
 }
 
 /* Estilo del botón emergente para volver al inicio */

@@ -67,9 +67,15 @@ img {
   justify-content: center;   /* Centra el contenido de la barra de navegación */
   background-color: #1755e3 !important;
   z-index: 20;               /* Asegura que la barra de navegación esté por encima de otros elementos */
-  padding: 0px 0;           /* Añade padding para mejor separación */
+  padding: 10px 0;           /* Añade padding para mejor separación */
 }
-
+.navbar-nav .nav-item {
+  margin: 0 2px;             /* Añade espacio entre los elementos del menú */
+}
+.navbar-nav .nav-link {
+  font-size: 18px; 
+  font-weight: 430; 
+}
 /* Ajustes para el navbar */
 .navbar-nav {
   display: flex;

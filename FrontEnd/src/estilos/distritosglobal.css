@@ -1,21 +1,68 @@
-.page-content {
-    background-color: #f8f9fa; /* Color de fondo suave */
-    padding: 20px; /* Espaciado interno */
-}
-
 h1, h2, h3 {
     color: #343a40; /* Color de texto oscuro */
     font-weight: 600; /* Negrita para encabezados */
+    margin-bottom: 20px; /* Aumentar espacio entre encabezados */
 }
 
 p {
     color: #495057; /* Color de texto más claro para párrafos */
     font-size: 1rem; /* Tamaño de fuente */
     line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 20px; /* Aumentar espacio entre párrafos */
 }
 
 footer {
     border-top: 1px solid #dee2e6; /* Línea superior */
     padding: 10px 0; /* Espaciado en el footer */
     background-color: #e9ecef; /* Color de fondo para el footer */
+    text-align: center; /* Centra el texto del footer */
+    margin-top: 30px; /* Espacio superior en el footer */
 }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem; /* Tamaño de fuente más pequeño para h1 */
+        margin-bottom: 25px; /* Aumentar espacio inferior */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño para h2 */
+        margin-bottom: 20px; /* Aumentar espacio inferior */
+    }
+
+    h3 {
+        font-size: 1.25rem; /* Tamaño de fuente más pequeño para h3 */
+        margin-bottom: 15px; /* Aumentar espacio inferior */
+    }
+
+    p {
+        font-size: 0.95rem; /* Tamaño de fuente más pequeño para párrafos */
+        margin-bottom: 25px; /* Aumentar espacio inferior */
+    }
+
+    footer {
+        padding: 8px 0; /* Ajustar padding en el footer */
+        margin-top: 25px; /* Aumentar espacio superior en el footer */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem; /* Tamaño de fuente aún más pequeño para h1 */
+        margin-bottom: 30px; /* Mayor espacio inferior */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Tamaño de fuente aún más pequeño para h2 */
+        margin-bottom: 25px; /* Mayor espacio inferior */
+    }
+
+    p {
+        font-size: 0.85rem; /* Tamaño de fuente aún más pequeño para párrafos */
+        margin-bottom: 30px; /* Mayor espacio inferior */
+    }
+}
+
+
