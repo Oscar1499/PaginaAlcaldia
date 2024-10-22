@@ -4,24 +4,24 @@ footer {
   padding: 40px 20px;
   color: #333;
   display: flex;
-  flex-direction: column; /* Cambiar a columna para mejor organización */
-  align-items: center; /* Centrar el contenido */
-  width: 100%; /* Asegurarse de que ocupe todo el ancho */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px; /* Asegurar un ancho máximo */
-  margin: 0 auto; /* Centrar el contenedor */
-  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .footer-left {
   max-width: 300px;
-  flex: 1; /* Permitir que crezca dentro del contenedor */
-  min-width: 200px; /* Asegurar un ancho mínimo */
+  flex: 1;
+  min-width: 200px;
 }
 
 .footer-left h2 {
@@ -35,7 +35,7 @@ footer {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px; 
+  font-size: 16px;
   margin-left: 10px;
 }
 
@@ -61,9 +61,9 @@ footer {
 }
 
 .footer-middle {
-  margin: 20px 40px; /* Ajustar márgenes para mejor distribución */
-  flex: 1; /* Permitir que crezca dentro del contenedor */
-  min-width: 200px; /* Asegurar un ancho mínimo */
+  margin: 20px 40px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .footer-middle h3 {
@@ -143,8 +143,8 @@ footer {
 /* Estilo del botón emergente para volver al inicio */
 .scroll-to-top {
   position: fixed;
-  bottom: 20px; /* Distancia desde el fondo */
-  right: 20px; /* Distancia desde la derecha */
+  bottom: 20px;
+  right: 20px;
   width: 40px;
   height: 40px;
   border: none;
@@ -158,7 +158,7 @@ footer {
   transition: background-color 0.3s, opacity 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   opacity: 0.8;
-  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  z-index: 1000;
 }
 
 .scroll-to-top:hover {
@@ -167,46 +167,109 @@ footer {
 }
 
 .scroll-to-top i {
-  font-size: 20px; /* Tamaño de la flecha */
+  font-size: 20px;
 }
 
 /* Media Queries para Responsividad */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footer-container {
-    flex-direction: column; /* Apilar elementos en pantallas pequeñas */
-    align-items: center; /* Centrar elementos */
+    flex-direction: column; /* Apilar los elementos */
+    align-items: center; /* Centrar contenido */
   }
 
   .footer-left, .footer-middle {
-    margin: 10px 0; /* Ajustar márgenes */
+    margin: 15px 0; /* Reducir márgenes */
     text-align: center; /* Centrar texto */
-  }
-
-  .footer-middle {
-    margin: 20px 0; /* Ajustar márgenes para evitar superposiciones */
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-left h2 {
-    font-size: 20px; /* Tamaño de fuente más pequeño */
+    flex: none; /* No permitir crecimiento innecesario */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
   }
 
   .footer-middle h3 {
-    font-size: 14px; /* Tamaño de fuente más pequeño */
+    font-size: 18px; /* Ajustar tamaño de fuente */
+  }
+
+  .footer-middle ul li, 
+  .footer-left p {
+    font-size: 14px; /* Aumentar legibilidad en pantallas medianas */
+  }
+
+  .social-icons a {
+    font-size: 18px; /* Ajustar el tamaño de los íconos */
+  }
+
+  .footer-bottom p {
+    font-size: 14px; /* Fuente ligeramente más grande para mejor lectura */
+  }
+}
+
+/* Pantallas pequeñas (480px a 767px) */
+@media (max-width: 767px) {
+  .footer-left h2 {
+    font-size: 20px; /* Reducir tamaño de fuente */
+  }
+
+  .footer-middle h3 {
+    font-size: 16px; /* Reducir tamaño de fuente */
   }
 
   .footer-middle ul li {
-    font-size: 12px; /* Tamaño de fuente más pequeño */
+    font-size: 13px; /* Reducir ligeramente el tamaño */
+  }
+
+  .footer-middle, 
+  .footer-left {
+    padding: 0 10px; /* Ajustar relleno */
+  }
+
+  .social-icons a {
+    font-size: 18px; /* Ajustar tamaño de íconos */
+  }
+
+  .footer-bottom p {
+    font-size: 12px; /* Reducir tamaño para espacio limitado */
   }
 }
 
+/* Pantallas muy pequeñas (max-width 480px) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 10px; /* Reducir padding general */
+  }
+
+  .footer-left h2 {
+    font-size: 18px; /* Reducir el tamaño de fuente para móviles */
+  }
+
+  .footer-middle h3 {
+    font-size: 14px;
+  }
+
+  .footer-middle ul li {
+    font-size: 12px; /* Tamaño más pequeño para mejor adaptación */
+  }
+
+  .social-icons a {
+    font-size: 16px; /* Reducir íconos en pantallas pequeñas */
+  }
+
+  .footer-bottom p {
+    font-size: 10px; /* Reducir aún más para pantallas pequeñas */
+  }
+
+  .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 18px; /* Reducir el tamaño del botón flotante */
+  }
+}
+
+/* Estilos para el modo oscuro y claro */
 .dark .footer-middle ul li {
-  color: #fff; /* Color blanco para el texto en modo oscuro */
+  color: #fff;
 }
 
 .light .footer-middle ul li {
-  color: #333; /* Color oscuro para el texto en modo claro */
+  color: #333;
 }
 
 .dark .footer-left h2 {
@@ -214,8 +277,7 @@ footer {
 }
 
 .light .footer-left h2 {
-  color: #333 !important; 
-
+  color: #333 !important;
 }
 
 .dark .footer-bottom p {

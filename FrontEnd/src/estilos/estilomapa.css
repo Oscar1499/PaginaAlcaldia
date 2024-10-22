@@ -52,9 +52,65 @@
   box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
  
 }
+.popup-container {
+  text-align: center;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* Ajusta el tamaño máximo según sea necesario */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-button {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #357ABD;
+}
+.tooltip-container {
+  background-color: rgba(236, 238, 240, 0.9); /* Fondo azul con un poco de transparencia */
+  color: white; /* Texto blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  transition: opacity 0.3s ease; /* Efecto de desvanecimiento */
+  max-width: 200px; /* Ancho máximo */
+  font-family: Arial, sans-serif; /* Cambiar a una fuente por defecto del sistema */
+}
+
+.tooltip-container img {
+  border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+strong {
+  color: #16337b; /* Color amarillo para los nombres de los municipios */
+}
+
+small {
+  color: rgba(255, 255, 255, 0.8); /* Color blanco con algo de transparencia para la descripción */
+}
 
 
+@media (max-width: 768px) {
+  .map-container {
+    height: 50vh;
+  }
+}
 
+@media (max-width: 480px) {
+  .map-container {
+    height: 40vh;
+  }
+}
 
 
 

@@ -49,7 +49,7 @@ const ContactenosContenido = () => {
             <span>Avenida Gral Cabañas, La Unión</span>
           </div>
           <div className="social-icons">
-            <div className="social-title">Redes Sociales:</div>
+            <div className="social-title"></div>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>

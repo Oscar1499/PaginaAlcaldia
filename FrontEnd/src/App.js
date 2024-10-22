@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './componentes/NavbarComponent';
 import Layout from './componentes/Layout';
 import Footer from './componentes/Footer';
