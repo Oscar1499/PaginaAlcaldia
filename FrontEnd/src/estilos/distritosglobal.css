@@ -1,0 +1,21 @@
+.page-content {
+    background-color: #f8f9fa; /* Color de fondo suave */
+    padding: 20px; /* Espaciado interno */
+}
+
+h1, h2, h3 {
+    color: #343a40; /* Color de texto oscuro */
+    font-weight: 600; /* Negrita para encabezados */
+}
+
+p {
+    color: #495057; /* Color de texto más claro para párrafos */
+    font-size: 1rem; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+footer {
+    border-top: 1px solid #dee2e6; /* Línea superior */
+    padding: 10px 0; /* Espaciado en el footer */
+    background-color: #e9ecef; /* Color de fondo para el footer */
+}
