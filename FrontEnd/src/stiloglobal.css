@@ -152,6 +152,7 @@
 .section-container {
   transition: opacity 0.5s ease-in-out;
   opacity: 1; 
+  overflow: hidden; 
 }
 
 /* HomePage.css */
@@ -180,7 +181,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-
+body {
+  overflow-x: hidden; 
+}
 h1 {
   color: #4A90E2;
   text-align: center;
@@ -196,4 +199,33 @@ p {
   font-size: 1rem;
   color: #555;
   line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .servicios-destacados h2, .album-noticias h2 {
+    font-size: 2rem; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+  }
+
+  .icono {
+    width: 90%; /* Ajustar a pantallas pequeñas */
+    max-width: none; /* Permitir que se ajuste al tamaño del contenedor */
+  }
+
+  .icono-imagen {
+    width: 40px; /* Tamaño de los íconos en pantallas pequeñas */
+    height: auto; 
+  }
+
+  .card-img-top {
+    height: auto; /* Permitir que la imagen sea responsiva */
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios-destacados h2, .album-noticias h2 {
+    font-size: 1.5rem; /* Ajustar aún más el tamaño de fuente */
+  }
+
+  p {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+  }
 }

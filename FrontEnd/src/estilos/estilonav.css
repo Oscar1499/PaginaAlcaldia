@@ -6,76 +6,45 @@
   justify-content: center;   /* Centra la imagen horizontalmente */
   align-items: center;       /* Centra la imagen verticalmente */
   overflow: hidden;          /* Evita que la imagen se desborde si es más grande que el contenedor */
-  padding: 0px 0;           /* Añade un poco de padding por si necesitas separación */
-  position: fixed;           /* Fija la imagen en la parte superior de la ventana */
+  padding: 0;                /* Se eliminan paddings para evitar desbordes */
+  position: relative;        /* Cambiado a relativo para que se desplace con el contenido */
   top: 0;
   z-index: 10;               /* Asegura que la imagen esté sobre el contenido */
 }
 
-img {
-  width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* O usa 'contain' si quieres que toda la imagen se vea */
+.navbar-custom {
+ 
+  background-color: #fff; /* Cambia el color de fondo según tus necesidades */
+  transition: background-color 0.3s ease; /* Añade una transición suave */
+  position: relative;      /* Cambiado a relativo para que se desplace con el contenido */
+  width: auto;             /* Asegura que la barra de navegación ocupe todo el ancho */
+
 }
 
-
-/* Estilos para la imagen del logo */
-.header-logo {
-  width: 120px;
-  height: 180px;
-  object-fit: cover;          /* Mantiene la imagen cubriendo el contenedor */
-  min-width: 100%;
-  min-height: 100%;
+.navbar-custom.scrolled {
+  background-color: #034383; /* Cambia el color de fondo cuando se desplaza */
 }
-.fixed-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;  /* Asegura que el contenido no cubra la imagen */
-  background-color: rgba(255, 255, 255, 0.8);  /* Fondo semitransparente */
-  display: flex;
-  flex-direction: column;  /* Ordena los elementos de arriba a abajo */
-  align-items: center;  /* Centra los elementos */
-}
-/* Estilos para el botón del portal */
-.portal-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 120px;     /* Ancho del botón */
-  height: 35px;     /* Alto del botón */
-  cursor: pointer;  /* Para cambiar el cursor cuando se pasa sobre el botón */
-  transition: opacity 0.3s ease;
-  z-index: 200;     /* Asegura que el botón esté por encima de otros elementos */
-}
-
-.portal-button:hover {
-  opacity: 0.7;
-}
-/* Selecciona el navbar específicamente con la clase personalizada */
-.navbar-custom.navbar-dark {
-  background-color: #034383 !important; /* El !important asegura que este estilo se aplique */
-}
-
 
 /* Estilos para la barra de navegación fija */
 .navbar {
-  position: fixed;           /* Fija el menú en la parte superior */
-  top: 18vh;                 /* Coloca el menú justo debajo de la imagen */
-  width: 100%;
-  display: flex;
+ 
+  display: flex;             /* Muestra los elementos en línea */
   justify-content: center;   /* Centra el contenido de la barra de navegación */
   background-color: #1755e3 !important;
   z-index: 20;               /* Asegura que la barra de navegación esté por encima de otros elementos */
   padding: 10px 0;           /* Añade padding para mejor separación */
+  
 }
+
 .navbar-nav .nav-item {
   margin: 0 2px;             /* Añade espacio entre los elementos del menú */
 }
+
 .navbar-nav .nav-link {
   font-size: 18px; 
   font-weight: 430; 
 }
+
 /* Ajustes para el navbar */
 .navbar-nav {
   display: flex;
@@ -91,7 +60,9 @@ img {
 
 /* Contenedor del contenido de las otras páginas */
 .page-content {
-  margin-top: 30vh; /* Deja espacio suficiente para la imagen y la barra de navegación */
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 10vh; /* Deja espacio suficiente para la imagen y la barra de navegación */
 }
 
 /* Estilos para el slide */
@@ -104,7 +75,7 @@ img {
   align-items: center;
   background-color: #f0f0f0;
   transition: height 0.5s ease, transform 0.5s ease;
-  margin-top: 1vh;          /* Se asegura que el slide comience después del menú */
+  margin-top: -10vh;          /* Se asegura que el slide comience después del menú */
 }
 
 .simple-slide-container.scrolled {
@@ -124,4 +95,103 @@ img {
   min-width: 100vw;
 }
 
+/* Estilos para la imagen del logo */
+.header-logo {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;          /* Mantiene la imagen cubriendo el contenedor */
+  min-width: 100%;
+  min-height: 100%;
+}
 
+.header-logo {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;          /* Mantiene la imagen cubriendo el contenedor */
+  min-width: 100%;
+  min-height: 100%;
+}
+/* Estilos para el botón del portal */
+.portal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 120px;     /* Ancho del botón */
+  height: 35px;     /* Alto del botón */
+  cursor: pointer;  /* Para cambiar el cursor cuando se pasa sobre el botón */
+  transition: opacity 0.3s ease;
+  z-index: 200;     /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.image-container {
+  position: relative; /* Asegura que los elementos hijos se posicionen relativos a este contenedor */
+}
+
+.bottom-left-button {
+  position: absolute; /* Permite posicionar el botón en una ubicación específica */
+  bottom: 5px; /* Distancia desde el fondo de la pantalla */
+  left: 38%; /* Distancia desde la izquierda de la pantalla, usando un porcentaje */
+  z-index: 10; /* Asegura que el botón esté encima de otros elementos */
+}
+
+.otro-boton {
+  width: 25vw; /* Ancho del botón en porcentaje del ancho de la ventana */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.portal-button:hover {
+  opacity: 0.7;
+}
+
+/* Selecciona el navbar específicamente con la clase personalizada */
+.navbar-custom.navbar-dark {
+  background-color: #034383 !important; /* El !important asegura que este estilo se aplique */
+}
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;             /* Muestra los elementos en línea */
+  justify-content: center;   /* Centra el contenido de la barra de navegación */
+  background-color: #1755e3; /* Color de fondo */
+  z-index: 20;               /* Asegura que esté por encima de otros elementos */
+  padding: 10px 0;           /* Añade padding para mejor separación */
+  position: relative;        /* Comienza como relativo */
+  transition: position 0.3s ease; /* Suave transición */
+}
+
+.navbar.fixed {               /* Nueva clase para el estado fijo */
+  position: fixed;            /* Cambia a fijo */
+  top: 0;                     /* Se asegura que esté en la parte superior */
+  width: 100%;               /* Asegura que ocupe todo el ancho */
+}
+
+/* Media Queries para tamaños de pantalla más pequeños */
+@media (max-width: 768px) {
+  .bottom-left-button {
+    position: absolute; /* Permite posicionar el botón en una ubicación específica */
+    bottom: 0px; /* Distancia desde el fondo de la pantalla */
+    left: 5%; /* Distancia desde la izquierda de la pantalla, usando un porcentaje */
+    z-index: 10; /* Asegura que el botón esté encima de otros elementos */
+  }
+  
+  .otro-boton {
+    width: 100vw; /* Ancho del botón en porcentaje del ancho de la ventana */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+}
+
+
+/* Agrega esto al final de tu CSS existente */
+@media (max-width: 768px) { /* Ajusta el tamaño según sea necesario */
+  .navbar {
+      position: static; /* Cambia a 'static' para que no se fije hasta más pequeño */
+      /* Otras propiedades de estilo según sea necesario */
+  }
+
+  .navbar-fixed {
+      position: fixed; /* Cambia a 'fixed' cuando sea necesario */
+      top: 0;
+      left: -10;
+      right: 0;
+      z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  }
+}

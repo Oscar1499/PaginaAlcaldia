@@ -50,6 +50,8 @@
   border-radius: 10px; /* Esquinas redondeadas */
   overflow: hidden; /* Oculta el desbordamiento */
   box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+  z-index: 0;
+  position: relative;
  
 }
 .popup-container {
