@@ -42,6 +42,7 @@ footer {
   align-items: center;
 }
 
+
 .footer-left .theme-toggle {
   background: none;
   border: none;
@@ -53,13 +54,16 @@ footer {
 .footer-left p {
   font-size: 14px;
   margin-bottom: 10px;
+  
 }
 
 .social-icons {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-top: 10px;
 }
+
 
 .social-icons a {
   color: #333;
@@ -215,7 +219,13 @@ footer.dark h3 {
   font-size: 20px;
 }
 
+.p-sociales {
+  margin: 10px 0;         /* Espaciado vertical */
+  font-size: 16px;        /* Tamaño del texto */
+}
+
 /* Media Queries para Responsividad */
+
 @media (max-width: 1024px) {
   .footer-container {
     flex-direction: column; /* Apilar los elementos */
@@ -235,15 +245,22 @@ footer.dark h3 {
 
   .footer-middle ul li, 
   .footer-left p {
-    font-size: 14px; /* Aumentar legibilidad en pantallas medianas */
+    font-size: 14px;
+    justify-content: center;
   }
 
+  
   .social-icons a {
     font-size: 18px; /* Ajustar el tamaño de los íconos */
   }
 
   .footer-bottom p {
     font-size: 14px; /* Fuente ligeramente más grande para mejor lectura */
+  }
+  .p-sociales {
+    font-size: 16px;
+    
+    justify-content: center;   /* Asegura que el texto esté centrado */
   }
 }
 
@@ -265,6 +282,11 @@ footer.dark h3 {
   .footer-left {
     padding: 0 10px; /* Ajustar relleno */
   }
+  .p-sociales {
+    font-size: 16px;
+    
+    justify-content: center;   /* Asegura que el texto esté centrado */
+  }
 
   .social-icons a {
     font-size: 18px; /* Ajustar tamaño de íconos */
@@ -285,6 +307,20 @@ footer.dark h3 {
     font-size: 18px; /* Reducir el tamaño de fuente para móviles */
   }
 
+  .footer-left {
+    align-items: center;  /* Centra los elementos en pantallas pequeñas */
+    text-align: center;   /* Centra el texto también */
+  }
+
+  .social-icons {
+    justify-content: center;  /* Centra los íconos en pantallas pequeñas */
+  }
+  .p-sociales {
+    font-size: 16px;
+    
+    justify-content: center;   /* Asegura que el texto esté centrado */
+    
+  }
   .footer-middle h3 {
     font-size: 14px;
   }
@@ -297,8 +333,11 @@ footer.dark h3 {
     font-size: 16px; /* Reducir íconos en pantallas pequeñas */
   }
 
-  .footer-bottom p {
-    font-size: 10px; /* Reducir aún más para pantallas pequeñas */
+  .footer-bottom {
+    font-size: 10px; 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
   }
 
   .scroll-to-top {

@@ -42,7 +42,8 @@ const Footer = () => {
                 {darkMode ? "☀️" : "🌙"} 
               </button>
             </h2>
-            <p>Contactanos en redes sociales.</p>
+          
+            <p className='p-sociales'>Contactanos en redes sociales.</p>
             <div className="social-icons">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook"></i>

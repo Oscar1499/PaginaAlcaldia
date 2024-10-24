@@ -15,8 +15,12 @@ npm install nodemailer
 npm init -y
 npm install express nodemailer dotenv body-parser}
 
-
-
+comando para clonar mi git en el ssh del servidor
+git clone https://github.com/Oscar1499/PaginaAlcaldia.git
+comandos para subir de una vez a spanel
+git clone https://github.com/Oscar1499/PaginaAlcaldia.git
+git remote add spanel ssh://a1c4lu5v@alcaldialaunion.gob.sv/home/public_html
+scp -r C:\Users\oscar\pagina-alcaldia\FrontEnd\build\* a1c4lu5v@alcaldialaunion.gob.sv:/home/public_html
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 mkdir src/componentes

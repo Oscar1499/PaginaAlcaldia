@@ -3,9 +3,12 @@
     border-radius: 10px; /* Bordes redondeados */
     padding: 80px; /* Espaciado interno aumentado */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
-    margin: 20px; /* Margen externo para separar del resto del contenido */
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
     min-height: 500px; /* Altura mínima aumentada */
+    max-width: 800px; /* Ancho máximo del contenedor, ajusta según sea necesario */
+    width: 90%; /* Ocupará el 90% del ancho de la pantalla en pantallas más pequeñas */
 }
+
 
 .header {
     background-color: #1C2A48; /* Color de fondo del header */
@@ -82,9 +85,10 @@
 
 @media (max-width: 480px) {
     .tramites-wrapper {
-        padding: 20px; /* Ajustar más el espaciado interno */
+        padding: 40px; /* Reducir el padding en pantallas más pequeñas */
+        margin: 10px; /* Ajustar el margen para dispositivos pequeños */
+        max-width: 95%; /* Ocupar un mayor ancho en dispositivos pequeños */
     }
-
     .header {
         padding: 15px; /* Ajustar espaciado interno del header */
     }
