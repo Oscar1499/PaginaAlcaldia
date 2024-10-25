@@ -45,13 +45,13 @@ const Footer = () => {
           
             <p className='p-sociales'>Contactanos en redes sociales.</p>
             <div className="social-icons">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/share/mCe1UaRZTmRMGqyb/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook"></i>
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/lusur.sv?igsh=cTE3bXhmNmRlM3Qx" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="mailto:someone@example.com">
+              <a href="mailto:informatica@alcaldialaunion.gob.sv">
                 <i className="fas fa-envelope"></i>
               </a>
             </div>

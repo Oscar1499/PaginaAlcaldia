@@ -61,16 +61,16 @@ const ContactenosContenido = () => {
           </div>
           <div className="social-icons">
             <div className="social-title"></div>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/share/mCe1UaRZTmRMGqyb/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/lusur_sv?s=21&t=hQSH54aKlmTsHqq9bWv5IA" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/lusur.sv?igsh=cTE3bXhmNmRlM3Qx" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="mailto:correo@alcaldialaunion.gob.sv" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:informatica@alcaldialaunion.gob.sv" target="_blank" rel="noopener noreferrer">
               <FaEnvelope />
             </a>
           </div>
