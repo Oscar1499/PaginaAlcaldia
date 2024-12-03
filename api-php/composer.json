@@ -1,0 +1,9 @@
+{
+    "name": "informatica2/api-php",
+    "autoload": {
+        "psr-4": {
+            "Informatica2\\ApiPhp\\": "src/"
+        }
+    },
+    "require": {}
+}
