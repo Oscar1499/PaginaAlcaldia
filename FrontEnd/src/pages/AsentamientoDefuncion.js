@@ -1,9 +1,9 @@
 import React from 'react';
-import Acordeon from "./Acordeon";
+import InscripcionDefuncionesContenido from  "../contenido/InscripcionDefuncionesContenido";
 const AsentamientoDefuncion = () => {
   return (
     <div className="page-content">
-    <Acordeon />
+    <InscripcionDefuncionesContenido/>
     </div>
   );
 };

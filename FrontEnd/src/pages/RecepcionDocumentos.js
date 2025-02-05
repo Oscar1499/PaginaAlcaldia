@@ -1,9 +1,9 @@
 import React from 'react';
-import Acordeon from "./Acordeon";
+import MarginacionesContenido from  "../contenido/MarginacionesContenido";
 const RecepcionDocumentos = () => {
   return (
     <div className="page-content">
-    <Acordeon />
+    <MarginacionesContenido />
     </div>
   );
 };

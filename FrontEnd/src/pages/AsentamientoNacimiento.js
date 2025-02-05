@@ -1,9 +1,9 @@
 import React from 'react';
-import Acordeon from "./Acordeon";
+import AsentamientoNContenido from "../contenido/AsentamientoNContenido";
 const AsentamientoNacimiento = () => {
   return (
     <div className="page-content">
-    <Acordeon />
+    <AsentamientoNContenido />
     </div>
   );
 };

@@ -13,23 +13,23 @@ const RegistroFamiliar = () => {
       <div className="botones-container">
         <Link to="/permisos-publicitarios" className="tramite-boton">
           <FaFileContract className="icon" />
-          Emisión certificación de partidas
+          Emisión de Certificaciones
         </Link>
         <Link to="/vialidades" className="tramite-boton">
           <FaClipboardCheck className="icon" />
-          Emisión de auténtica de partidas
+          Emisión de Autenticas
         </Link>
         <Link to="/licencia-operaciones" className="tramite-boton">
           <FaIdCard className="icon" />
-          Carné de identificación personal
+          Carné de Menoridad 
         </Link>
         <Link to="/renovacion-permanencia" className="tramite-boton">
           <FaFileAlt className="icon" />
-          Constancias y/o fichas de cédulas
+          Constancias 
         </Link>
         <Link to="/recepcion-documentos" className="tramite-boton">
           <FaInbox className="icon" />
-          Recepción de documentos, actos o hechos jurídicos
+          Marginaciones y/o Resposiciones
         </Link>
         <Link to="/asentamiento-nacimiento" className="tramite-boton">
           <FaBaby className="icon" />

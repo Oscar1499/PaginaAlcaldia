@@ -1,9 +1,9 @@
 import React from 'react';
-import Acordeon from "./Acordeon";
+import EmisionAutenticasContenido from  "../contenido/EmisionAutenticasContenido";
 const Vialidades = () => {
   return (
     <div className="page-content">
-    <Acordeon />
+    <EmisionAutenticasContenido />
     </div>
   );
 };

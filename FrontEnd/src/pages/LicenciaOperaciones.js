@@ -1,9 +1,9 @@
 import React from 'react';
-import Acordeon from "./Acordeon";
+import CarnetMenoridadContenido from "../contenido/CarnetMenoridadContenido";
 const LicenciaOperaciones = () => {
   return (
     <div className="page-content">
-    <Acordeon />
+    <CarnetMenoridadContenido />
     </div>
   );
 };

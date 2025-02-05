@@ -1,9 +1,9 @@
 import React from 'react';
-import Acordeon from "./Acordeon";
+import CertificacionesContenido from "../contenido/CertificacionesContenido";
 const PermisosPublicitarios = () => {
   return (
     <div className="page-content">
-    <Acordeon />
+    <CertificacionesContenido />
     </div>
   );
 };

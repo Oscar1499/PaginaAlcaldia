@@ -1,9 +1,9 @@
 import React from 'react';
-import Acordeon from "./Acordeon";
+import ConstanciasContenido from  "../contenido/ConstanciasContenido";
 const RenovacionPermanencia = () => {
   return (
     <div className="page-content">
-    <Acordeon />
+    <ConstanciasContenido />
     </div>
   );
 };
