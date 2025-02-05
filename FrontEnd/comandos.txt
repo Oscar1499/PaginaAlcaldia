@@ -45,3 +45,6 @@ git add .                     # Agrega tus cambios
 git commit -m "Descripción de los cambios"
 git push origin PaginaAlcaldia
 git push -u origin PaginaAlcaldia  # Haz push a la rama remota 
+git reflog #sirve para ver los commits hechos
+git reset --hard 03f20f3 #ejemplo de como revertir en base al reflog
+git push --force origin PaginaAlcaldia #Sirve para revertir el sincronizacion
