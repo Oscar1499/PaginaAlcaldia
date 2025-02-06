@@ -14,7 +14,7 @@ const Acordeon = () => {
       content: (
         <div>
           <p><strong>Nombre del trámite:</strong> Inscripción de Uniones No Matrimoniales </p>
-          <p><strong>Costo:</strong> $3.68 </p>
+          <p hidden ><strong>Costo:</strong> $3.68 </p>
           <p><strong>Tiempo de espera:</strong> 5 días hábiles, en base a la LREF.</p>
         </div>
       ),
@@ -42,8 +42,8 @@ const Acordeon = () => {
       title: 'Pasos a seguir',
       content: (
         <ul>
-          <li>Entregar la documentación en Sindicatura Municipal.</li>
-          <li>Transcurrido el plazo estipulado, pagar la tasa correspondiente.</li>
+          <li></li>
+        
         </ul>
       ),
     },

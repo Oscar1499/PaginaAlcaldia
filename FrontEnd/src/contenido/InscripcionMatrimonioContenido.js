@@ -14,7 +14,7 @@ const InscripcionMatrimonioContenido = () => {
       content: (
         <div>
           <p><strong>Nombre del trámite:</strong> Inscripción de Matrimonio </p>
-          <p><strong>Costo:</strong> $3.68 </p>
+          <p hidden ><strong>Costo:</strong> $3.68 </p>
           <p><strong>Tiempo de espera:</strong> 5 días hábiles, en base a la LREF.</p>
         </div>
       ),
