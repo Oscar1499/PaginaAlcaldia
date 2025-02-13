@@ -155,30 +155,41 @@ const Tramites = () => {
     ],
     'Trámites Empresariales': [
       { 
-        nombre: 'Permiso de Instalación de Elemento Publicitario',
-        descripcion: 'Autorización para instalar elementos publicitarios.',
+        nombre: 'Vialidad Municipal',
+        descripcion: 'Vialidad y Solvencia Municipal Inscrito.',
+        costo: '$30',
+        tiempoEspera: '4 días hábiles',
+        requisitos: 'Comprobante de pago de impuestos.',
+        documentacionRequerida: 'Comprobante de pago, solicitud.',
+        pasosASeguir: '1. Solicitar solvencia. 2. Validar pagos. 3. Emitir certificado.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-id-card' 
+      },
+      { 
+        nombre: 'Vialidad No Rural',
+        descripcion: 'Vialidad y Solvencia Municipal No Inscrito Rural.',
         costo: '$50',
         tiempoEspera: '5 días hábiles',
         requisitos: 'Solicitud formal, identificación.',
         documentacionRequerida: 'Formulario de solicitud, comprobante de propiedad.',
         pasosASeguir: '1. Solicitar permiso. 2. Validación de lugar. 3. Emitir permiso.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-bullhorn' 
+        icono: 'fa-solid fa-city'  
       },
       { 
-        nombre: 'Vialidades', 
-        descripcion: 'Permiso para la realización de obras en vías públicas.',
+        nombre: 'Vialidad No Urbano',
+        descripcion: 'Vialidad y Solvencia Municipal No Inscrito Urbano.',
         costo: '$70',
         tiempoEspera: '7 días hábiles',
         requisitos: 'Estudio de impacto vial, plano de la obra.',
         documentacionRequerida: 'Plano vial, solicitud de permiso.',
         pasosASeguir: '1. Solicitar permiso. 2. Evaluar impacto. 3. Emitir permiso.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-road' 
+        icono: 'fa-solid fa-mountain' 
       },
       { 
-        nombre: 'Licencia de Operaciones para Empresas',
-        descripcion: 'Licencia para operar legalmente una empresa.',
+        nombre: 'Estado de Cuenta Inmueble',
+        descripcion: 'Emisión de Estado de Cuenta Inmueble.',
         costo: '$100',
         tiempoEspera: '15 días hábiles',
         requisitos: 'Registro de empresa, identificación.',
@@ -188,30 +199,30 @@ const Tramites = () => {
         icono: 'fa-solid fa-building' 
       },
       { 
-        nombre: 'Renovación de Permanencia',
-        descripcion: 'Renovación de permiso de permanencia para empresas.',
+        nombre: 'Estado de Cuenta Comercio',
+        descripcion: 'Emisión de Estado de Cuenta Comercio.',
         costo: '$50',
         tiempoEspera: '5 días hábiles',
         requisitos: 'Identificación, documento de la empresa.',
         documentacionRequerida: 'Identificación, documento vigente.',
         pasosASeguir: '1. Solicitar renovación. 2. Validar información. 3. Emitir permiso.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-refresh' 
+        icono: 'fa-solid fa-file-invoice-dollar' 
       },
       { 
-        nombre: 'Licencia de Operaciones para Empresa Publicitaria',
-        descripcion: 'Licencia especial para empresas publicitarias.',
+        nombre: 'Convenio de Inmueble',
+        descripcion: 'Convenio de Pago Inmueble.',
         costo: '$120',
         tiempoEspera: '10 días hábiles',
         requisitos: 'Documentación oficial, registro de empresa.',
         documentacionRequerida: 'Registro comercial, identificación.',
         pasosASeguir: '1. Solicitar licencia. 2. Validar datos. 3. Emitir licencia.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-ad' 
+        icono: 'fa-solid fa-file-invoice' 
       },
       { 
-        nombre: 'Emisión de Estados de Cuenta',
-        descripcion: 'Solicitud de estado de cuenta oficial.',
+        nombre: 'Convenio de Comercio',
+        descripcion: 'Convenio de Pago Comercio.',
         costo: '$15',
         tiempoEspera: '2 días hábiles',
         requisitos: 'Número de cuenta, identificación.',
@@ -221,19 +232,8 @@ const Tramites = () => {
         icono: 'fa-solid fa-file-invoice' 
       },
       { 
-        nombre: 'Emisión de Solvencia Municipal General',
-        descripcion: 'Certificado de solvencia municipal para empresas.',
-        costo: '$30',
-        tiempoEspera: '4 días hábiles',
-        requisitos: 'Comprobante de pago de impuestos.',
-        documentacionRequerida: 'Comprobante de pago, solicitud.',
-        pasosASeguir: '1. Solicitar solvencia. 2. Validar pagos. 3. Emitir certificado.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-check' 
-      },
-      { 
-        nombre: 'Emisión de Planes de Pago',
-        descripcion: 'Solicitud para establecer un plan de pagos.',
+        nombre: 'Pago de Impuestos',
+        descripcion: 'Pago de Impuestos y Tasas Municipales.',
         costo: '$20',
         tiempoEspera: '3 días hábiles',
         requisitos: 'Identificación, monto adeudado.',
@@ -241,17 +241,6 @@ const Tramites = () => {
         pasosASeguir: '1. Solicitar plan. 2. Evaluar deuda. 3. Emitir plan.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-credit-card' 
-      },
-      { 
-        nombre: 'Concepto de Negocio',
-        descripcion: 'Certificación de actividad económica de la empresa.',
-        costo: '$25',
-        tiempoEspera: '2 días hábiles',
-        requisitos: 'Documento de identidad, registro de actividad.',
-        documentacionRequerida: 'Documentos oficiales, identificación.',
-        pasosASeguir: '1. Solicitar concepto. 2. Validar información. 3. Emitir concepto.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-business-time' 
       }
     ],
     'Registro Familiar': [
@@ -267,7 +256,7 @@ const Tramites = () => {
         icono: 'fa-solid fa-baby' 
       },
       { 
-        nombre: 'Emisión de auténtica de partidas', 
+        nombre: 'Emisión de Auténtica de Partidas', 
         descripcion: 'Autenticación oficial de las partidas.',
         costo: '$9.98',
         tiempoEspera: '5 días hábiles',
@@ -278,7 +267,7 @@ const Tramites = () => {
         icono: 'fa-solid fa-id-card' 
       },
       { 
-        nombre: 'Carnét de identificación personal', 
+        nombre: 'Carnét de Identificación Personal', 
         descripcion: 'Emisión de carnét de menoridad.',
         costo: '$5.00',
         tiempoEspera: '5 días hábiles',
@@ -322,7 +311,7 @@ const Tramites = () => {
         icono: 'fa-solid fa-certificate' 
       },
       { 
-        nombre: 'Asentamiento de defunción', 
+        nombre: 'Asentamiento de Defunción', 
         descripcion: 'Registro de defunción.',
         costo: '$3.68',
         tiempoEspera: '5 días hábiles',
@@ -447,10 +436,10 @@ const Tramites = () => {
         icono: 'fa-solid fa-building' 
       }
     ],
-    'Trámites Cementerio': [
+      'Trámites Cementerio': [
       { 
-        nombre: 'Reposición de títulos', 
-        descripcion: 'Proceso para recuperar un título de propiedad de una tumba.',
+        nombre: 'Reposición de Títulos', 
+        descripcion: 'Reposición de título o traspaso de derecho a perpetuidad.',
         costo: '$40',
         tiempoEspera: '3 días hábiles',
         requisitos: 'Identificación, solicitud formal.',
@@ -460,29 +449,106 @@ const Tramites = () => {
         icono: 'fa-solid fa-cross' 
       },
       { 
-        nombre: 'Permiso de construcción', 
-        descripcion: 'Autorización para construir en el cementerio.',
-        costo: '$50',
-        tiempoEspera: '7 días hábiles',
-        requisitos: 'Plan de construcción, autorización de la alcaldía.',
-        documentacionRequerida: 'Plano de construcción, carta de autorización.',
-        pasosASeguir: '1. Presentar plan. 2. Evaluación de viabilidad. 3. Obtener permiso.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-hard-hat' 
-      },
-      { 
-        nombre: 'Certificaciones de títulos de propiedad', 
-        descripcion: 'Certificación oficial del título de propiedad de una tumba.',
+        nombre: 'Enterramiento', 
+        descripcion: 'Enterramiento en fábrica ínfima y prórroga de un año para conservar cadáver en la misma sepultura.',
         costo: '$30',
         tiempoEspera: '4 días hábiles',
         requisitos: 'Título original, identificación.',
         documentacionRequerida: 'Título de propiedad, copia de identificación.',
         pasosASeguir: '1. Presentar título. 2. Validación de datos. 3. Emitir certificación.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-certificate' 
+        icono: 'fa-solid fa-person-digging' 
+      },
+      { 
+        nombre: 'Remodelación de Bóveda', 
+        descripcion: 'Proceso de renovación o reparación de una bóveda existente.',
+        costo: '$100',
+        tiempoEspera: '10 días hábiles',
+        requisitos: 'Título de propiedad, autorización de la alcaldía.',
+        documentacionRequerida: 'Título de propiedad, carta de autorización.',
+        pasosASeguir: '1. Presentar solicitud. 2. Evaluación del estado. 3. Aprobación del permiso. 4. Inicio de remodelación.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-tools' 
+      },
+      { 
+        nombre: 'Construcción de Nichos Tamaño estándar', 
+        descripcion: 'Solicitud para construir dos nichos en el cementerio.',
+        costo: '$150',
+        tiempoEspera: '15 días hábiles',
+        requisitos: 'Título de propiedad, autorización municipal.',
+        documentacionRequerida: 'Plano de construcción, carta de autorización.',
+        pasosASeguir: '1. Presentar planos. 2. Evaluación técnica. 3. Aprobación de construcción.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-hard-hat' 
+      },
+      { 
+        nombre: 'Derecho a Perpetuidad de Puesto', 
+        descripcion: 'Adquisición del derecho a perpetuidad por un puesto que mide 2.50x1.20 mts2.',
+        costo: '$500',
+        tiempoEspera: 'Inmediato',
+        requisitos: 'Identificación del comprador.',
+        documentacionRequerida: 'Copia de identificación, pago del derecho.',
+        pasosASeguir: '1. Presentar identificación. 2. Validación del espacio disponible. 3. Firma del contrato.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-scroll' 
+      },
+      { 
+        nombre: 'Prórrogas', 
+        descripcion: 'Prórroga de 7 años para conservar cadáver en misma sepultura.',
+        costo: '$80',
+        tiempoEspera: '5 días hábiles',
+        requisitos: 'Título de propiedad, autorización de la familia.',
+        documentacionRequerida: 'Título de propiedad, carta de solicitud.',
+        pasosASeguir: '1. Presentar solicitud. 2. Evaluación del espacio. 3. Firma de prórroga.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-clock' 
+      },
+      { 
+        nombre: 'Abrir y cerrar nicho', 
+        descripcion: 'Servicio de apertura y cierre de nicho en caso de exhumación o entierro.',
+        costo: '$60',
+        tiempoEspera: '1 día hábil',
+        requisitos: 'Autorización familiar, permiso del cementerio.',
+        documentacionRequerida: 'Carta de autorización, pago del servicio.',
+        pasosASeguir: '1. Presentar solicitud. 2. Programar apertura/cierre. 3. Realizar el proceso.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-door-open' 
+      },
+      { 
+        nombre: 'Extracción de osamenta para traslado', 
+        descripcion: 'Procedimiento para retirar restos óseos y trasladarlos a otro lugar.',
+        costo: '$70',
+        tiempoEspera: '7 días hábiles',
+        requisitos: 'Autorización familiar, permiso del cementerio.',
+        documentacionRequerida: 'Carta de autorización, acta de defunción.',
+        pasosASeguir: '1. Presentar solicitud. 2. Evaluación del estado de los restos. 3. Programar extracción y traslado.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-bone' 
+      },
+      { 
+        nombre: 'Carátula del título de perpetuidad', 
+        descripcion: 'Reemplazo o actualización de la carátula del título de perpetuidad.',
+        costo: '$20',
+        tiempoEspera: '3 días hábiles',
+        requisitos: 'Título de propiedad original.',
+        documentacionRequerida: 'Copia del título de propiedad.',
+        pasosASeguir: '1. Presentar título original. 2. Validación de datos. 3. Emisión de nueva carátula.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-file-alt' 
+      },
+      { 
+        nombre: 'Licencia para construcción de bóveda', 
+        descripcion: 'Permiso necesario para construir una bóveda en el cementerio.',
+        costo: '$120',
+        tiempoEspera: '10 días hábiles',
+        requisitos: 'Plano de construcción, autorización de la alcaldía.',
+        documentacionRequerida: 'Plano de construcción, carta de solicitud.',
+        pasosASeguir: '1. Presentar plano. 2. Evaluación de viabilidad. 3. Aprobación del permiso.',
+        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        icono: 'fa-solid fa-file-contract' 
       }
     ],
-    'Trámites de Delegación': [
+    'Trámites de Contravencional': [
       { 
         nombre: 'Denuncia', 
         descripcion: 'Proceso para realizar una denuncia oficial.',
