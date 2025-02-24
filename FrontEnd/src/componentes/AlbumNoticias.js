@@ -46,7 +46,7 @@ function AlbumNoticias() {
 
   return (
     <div className="container-fluid p-0 album-noticias">
-      <h2 className="text-center mb-4 text-white">NOTICIAS RECIENTES</h2>
+ 
       <div className="row">
         {noticias.map((noticia, index) => (
           <div className="col-md-4 mb-4" key={noticia.id_evento || index}>

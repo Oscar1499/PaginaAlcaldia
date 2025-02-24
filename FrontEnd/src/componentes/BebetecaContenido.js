@@ -18,13 +18,18 @@ const BebetecaContenido = () => {
         Aquí encontrarás una variedad de recursos y actividades para los más pequeños.
       </p>
       <div className="row">
+       
+   
+       
+      </div>
+      <div className="row">
         <div className="col-md-4">
           <div className="card shadow-sm">
             <img src={Actividad1} alt="Cuentos y Lecturas" className="card-img-top" />
             <div className="card-body">
-              <h2 className="card-title">Cuentos y Lecturas</h2>
+              <h2 className="card-title">Juegos Ludicos</h2>
               <p className="card-text">
-                Explora una selección de cuentos y libros diseñados para estimular la imaginación de los niños.
+               Se fomenta el desarrollo sensorial y motor através de actividades de exploración y juegos diseñados para potenciar las habilidades fisicas y la coordinación de los niños.
               </p>
             </div>
           </div>
@@ -33,9 +38,9 @@ const BebetecaContenido = () => {
           <div className="card shadow-sm">
             <img src={Actividad2} alt="Juegos Interactivos" className="card-img-top" />
             <div className="card-body">
-              <h2 className="card-title">Juegos Interactivos</h2>
+              <h2 className="card-title">Lectura de Cuentos</h2>
               <p className="card-text">
-                Participa en juegos educativos que enseñan a través de la diversión y la creatividad.
+                Se desarrolla el crecimiento cognitivo y lingüístico.
               </p>
             </div>
           </div>
@@ -44,9 +49,21 @@ const BebetecaContenido = () => {
           <div className="card shadow-sm">
             <img src={Actividad3} alt="Actividades Creativas" className="card-img-top" />
             <div className="card-body">
-              <h2 className="card-title">Actividades Creativas</h2>
+              <h2 className="card-title">Desarrollo Círculo Familiar</h2>
               <p className="card-text">
-                Descubre manualidades y actividades que fomentan la creatividad y la expresión artística.
+                Brinda fortalecimiento en su rol, en el proceso de aprendizaje y desarrollo del niño.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-4">
+          <div className="card shadow-sm">
+            <img src={Actividad1} alt="Cuentos y Lecturas" className="card-img-top" />
+            <div className="card-body">
+              <h2 className="card-title">Visitas Escolares</h2>
+              <p className="card-text">
+                Actividades de canto, juegos lúdicos, lectura de cuentos entre otras actividades.
               </p>
             </div>
           </div>
@@ -76,23 +93,20 @@ const BebetecaContenido = () => {
             <div className="accordion-body">
               <p><strong>Requisitos para registrarse:</strong></p>
               <ul>
-                <li>Ser residente en el municipio de La Unión.</li>
-                <li>Presentar una identificación válida.</li>
+                <li>Llenar hoja de inscripción (proporcionada en la bebeteca).</li>
                 <li>Registro de nacimiento del niño o niña.</li>
               </ul>
 
               <p><strong>Pasos para registrarse:</strong></p>
               <ol>
-                <li>Completar el formulario en línea disponible en nuestro sitio web.</li>
-                <li>Presentar los documentos requeridos en nuestra sede.</li>
-                <li>Confirmación de registro y asignación de usuario.</li>
+                <li>Completar el formulario.</li>
+                <li>Presentar los documentos requeridos en nuestra sede (partida de nacimiento).</li>
               </ol>
 
               <p><strong>Documentación requerida:</strong></p>
               <ul>
                 <li>Fotocopia de DUI del padre, madre o responsable.</li>
                 <li>Fotocopia de DUI de una persona extra que pueda retirar al menor.</li>
-                <li>Fotografía del alumno tamaño cédula.</li>
                 <li>Complementar ficha de inscripción con los datos solicitados.</li>
               </ul>
 
@@ -141,7 +155,6 @@ const BebetecaContenido = () => {
 };
 
 export default BebetecaContenido;
-
 
 
 

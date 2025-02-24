@@ -1,0 +1,47 @@
+/* Estilo general de la página */
+.page-content {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Secciones */
+.section-container, .map-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Títulos */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-container, .map-section {
+        padding: 20px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+}

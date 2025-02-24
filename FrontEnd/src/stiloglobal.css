@@ -1,6 +1,6 @@
 /* Servicios destacados */
 .servicios-destacados {
-  background-image: url('./assets/iconos/fondo-imagen.jpg');
+
   background-size: cover;
   background-position: center;
   padding: 40px 0;
@@ -129,7 +129,7 @@
 
 /* Álbum de noticias */
 .album-noticias {
-  background-image: url('./assets/iconos/fondo-imagen.jpg');
+
   background-size: cover;
   background-position: center;
   padding: 60px 0; /* Aumentar el padding superior e inferior */
