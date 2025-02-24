@@ -9,7 +9,6 @@ import noticia3Icon from '../assets/iconos/noticia3-icon.jpeg';
 function AlbumNoticias() {
   return (
     <div className="container-fluid p-0 album-noticias">
-      <h2 className="text-center mb-4 text-white">NOTICIAS RECIENTES</h2>
       <div className="row">
         {/* Card 1 */} 
         <div className="col-md-4 mb-4">

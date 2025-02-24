@@ -5,7 +5,7 @@ import '../stiloglobal.css';
 import ServiciosDestacados from '../componentes/ServiciosDestacados';  
 import AlbumNoticias from '../componentes/AlbumNoticias';
 import MapaOriente from '../pages/MapaOriente';
-
+import '../estilos/homepage.css';
 
 const HomePage = () => {
   const [currentSection, setCurrentSection] = useState('servicios-y-noticias');
@@ -18,10 +18,10 @@ const HomePage = () => {
 
     sections.forEach((section) => {
       const element = document.getElementById(section);
-      if (element) { // Verifica si el elemento existe
-        const bounding = element.getBoundingClientRect();
-        const sectionTop = bounding.top + window.scrollY;
-        const isInView = scrollY >= sectionTop - window.innerHeight / 2 && scrollY < sectionTop + bounding.height;
+      if (element) {
+        const { top, height } = element.getBoundingClientRect();
+        const sectionTop = top + window.scrollY;
+        const isInView = scrollY >= sectionTop - window.innerHeight / 2 && scrollY < sectionTop + height;
 
         if (isInView) {
           foundSection = section;
@@ -29,7 +29,9 @@ const HomePage = () => {
       }
     });
 
-    setCurrentSection(foundSection);
+    if (foundSection !== currentSection) {
+      setCurrentSection(foundSection);
+    }
   }, [currentSection]);
 
   useEffect(() => {
@@ -41,18 +43,18 @@ const HomePage = () => {
     <div className="page-content">
       <SlideEventos />
 
-      <div id="servicios-y-noticias" className={`section-container ${currentSection === 'servicios-y-noticias' ? 'fade-in' : 'fade-out'}`}>
+      <section id="servicios-y-noticias" className={`section-container ${currentSection === 'servicios-y-noticias' ? 'fade-in' : 'fade-out'}`}>
+        <h2 className="section-title">Servicios y Noticias</h2>
         <ServiciosDestacados />
         <AlbumNoticias />
-      </div>
+      </section>
 
-      <div id="mapa" className={`map-section ${currentSection === 'mapa' ? 'fade-in' : 'fade-out'}`}>
+      <section id="mapa" className={`map-section ${currentSection === 'mapa' ? 'fade-in' : 'fade-out'}`}>
+        <h2 className="section-title">Mapa Interactivo</h2>
         <MapaOriente />
-      </div>
+      </section>
     </div>
   );
 };
 
 export default HomePage;
-
-
