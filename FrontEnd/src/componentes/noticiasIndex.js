@@ -4,27 +4,32 @@ import { Tabs, Tab } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const NoticiasIndex = () => {
-  const [eventos, setEventos] = useState([]);
-  const [filtro, setFiltro] = useState("");
-  const [paginaActual, setPaginaActual] = useState(1);
-  const eventosPorPagina = 6;
-  const maximoPaginas = 5;
-  const maxCaracteres = 200;
+  const [eventos, setEventos] = useState([]); // Estado para almacenar los eventos
+  const [filtro, setFiltro] = useState(""); // Estado para filtrar noticias o eventos
+  const [paginaActual, setPaginaActual] = useState(1); // Estado para la paginación
+  const [cargando, setCargando] = useState(true); // Estado de carga
+  const [error, setError] = useState(null); // Estado de errores
+  const eventosPorPagina = 6; // Número de eventos por página
+  const maximoPaginas = 5; // Máximo de botones en la paginación
+  const maxCaracteres = 200; // Máximo de caracteres en la descripción
 
   // Función para obtener los eventos desde la API
   const fetchEventos = async () => {
     try {
-      const response = await fetch("https://servicios.alcaldialaunion.gob.sv/api/eventos");
+      setCargando(true); // Activar estado de carga
+      const response = await fetch("https://servicios.alcaldialaunion.gob.sv/api.php");
       if (!response.ok) {
         throw new Error(`Error HTTP: ${response.status}`);
       }
       const data = await response.json();
-      setEventos(data);
+      setEventos(data); // Guardar los eventos
     } catch (error) {
       console.error("Error al obtener los eventos:", error.message);
+      setError(error.message); // Manejar errores
+    } finally {
+      setCargando(false); // Desactivar estado de carga
     }
   };
-  
 
   // Hook para cargar los datos al montar el componente
   useEffect(() => {
@@ -60,7 +65,11 @@ const NoticiasIndex = () => {
 
   for (let numero = rangoInicio; numero <= rangoFin; numero++) {
     paginador.push(
-      <Pagination.Item key={numero} active={numero === paginaActual} onClick={() => cambiarPagina(numero)}>
+      <Pagination.Item
+        key={numero}
+        active={numero === paginaActual}
+        onClick={() => cambiarPagina(numero)}
+      >
         {numero}
       </Pagination.Item>
     );
@@ -72,12 +81,28 @@ const NoticiasIndex = () => {
     );
   }
 
+  if (cargando) {
+    return <div className="text-center">Cargando eventos...</div>;
+  }
+
+  if (error) {
+    return <div className="text-center text-danger">Error: {error}</div>;
+  }
+
   return (
     <div className="container my-5">
       <h1 className="mb-4">Eventos y Noticias</h1>
 
       {/* Pestañas de filtro */}
-      <Tabs id="controlled-tab-example" activeKey={filtro} onSelect={(k) => setFiltro(k)} className="mb-4">
+      <Tabs
+        id="controlled-tab-example"
+        activeKey={filtro}
+        onSelect={(k) => {
+          setFiltro(k);
+          setPaginaActual(1); // Reiniciar a la página 1 al cambiar filtro
+        }}
+        className="mb-4"
+      >
         <Tab eventKey="" title="Todos"></Tab>
         <Tab eventKey="Noticias" title="Noticias"></Tab>
         <Tab eventKey="Eventos" title="Eventos"></Tab>
