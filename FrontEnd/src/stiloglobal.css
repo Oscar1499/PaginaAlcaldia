@@ -10,7 +10,7 @@
 
   /* Empieza invisible y desplazado hacia abajo */
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(800px);
   
   /* Añadimos la animación al cargar */
   animation: fadeInUp 1s ease forwards;
@@ -21,12 +21,40 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(600px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+.opacity {
+  opacity: 1; /* Comienza visible */
+  transform: translateY(30px); /* Desplazado hacia abajo */
+  
+  /* Añadimos la animación al cargar */
+  animation: fadeInDown 3s ease forwards; /* Cambia el nombre de la animación a fadeInDown */
+}
+
+/* Animación para "desvanecerse" y "desplazarse" hacia abajo */
+@keyframes fadeInDown {
+  0% {
+    opacity: 1; /* Comienza visible */
+    transform: translateY(30px); /* Comienza desplazado hacia abajo */
+  }
+  100% {
+    opacity: 1; /* Se mantiene visible */
+    transform: translateY(0); /* Se mueve a su posición original */
+  }
+}
+
+/* Añadir un efecto de desvanecimiento al desplazarse */
+.fade-out {
+  opacity: 0; /* Se desvanece */
+  transform: translateY(30px); /* Se desplaza hacia abajo */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
 }
 
 /* Título de Servicios destacados */

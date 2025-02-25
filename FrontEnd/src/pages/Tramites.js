@@ -294,8 +294,8 @@ const Tramites = () => {
         costo: '$3.68',
         tiempoEspera: '1 día hábil',
         requisitos: 'Solicitud escrita dirigida al Registro del Estado Familiar, especificando el tipo de marginación solicitada (MG). Documentos probatorios (MG), (RP).',
-        documentacionRequerida: 'Documentos a recibir.',
-        pasosASeguir: '1. Documentos probatorios que respalden la modificación (MG) 2. Copia del DUI del solicitante (MG),(RP). 3. Se realiza a solicitud de la parte interesada. 4. Llenado de formulario y solicitud (RP). 5. Partida certificada por Notario o Microfilm emitidopor RNPN (RP)',
+        documentacionRequerida: '1. Documentos probatorios que respalden la modificación (MG) 2. Copia del DUI del solicitante (MG),(RP). 3. Se realiza a solicitud de la parte interesada. 4. Llenado de formulario y solicitud (RP). 5. Partida certificada por Notario o Microfilm emitidopor RNPN (RP)', 
+        pasosASeguir: '1. Presentarse a la unidad de Registro Familiar. 2. Pagar aranceles.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-receipt' 
       },
@@ -326,9 +326,9 @@ const Tramites = () => {
         descripcion: 'Registro de Union no Matrimonial.',
         costo: '$3.68',
         tiempoEspera: '5 días hábiles',
-        requisitos: 'Cualquier pariente por consanguinidad o afinidad de un fallecido, o persona que, por razón de su cargo, profesión u oficio, o vecindad, tuviere conocimiento del fallecimiento de una persona, en el plazo máximo de cuarenta y cinco díashábiles siguientes de dicho conocimiento, deberá informarlo al registrador del estado familiar competente, para que asiente la inscripción de defunción en base al art 78 LREF.',
-        documentacionRequerida: '1. Esquela del Instituto de médicina Legal, constancia o certificado médico expedida y firmada por el médico que atendió o reconoció el cadaver. 2. Copia de DUI del fallecido, el informante y un testigo en caso aplicare.',
-        pasosASeguir: '1. Cuando no fuere posible obtener constancia médica de la muerte, el deceso deberá probarse al registrador delestado familiar a través del documento resultante de la autopsia o del levantamiento del cadáver con relación a a determinación del cuerpo sin vida, o en su caso, mediante la declaración de un testigo mayor de dieciocho en base a la hábiles siguientes de dicho conocimiento, deberá informarlo al años que haya visto el cadáver, quien en todo caso deberá identificarse de acuerdo con lo establecido en la presente ley. 2. No existe limitaciones en cuanto a que el testigo sea familiar de la persona fallecida.',
+        requisitos: 'Declare la existencia de la unión no matrimonial remitirá por medio de oficio al registrador del estado familiar competente la certificación de la sentencia que declara la existencia de la unión, en el plazo de cinco días hábiles siguientes a aquel en que la resolución quedó firme. En base al artículo 72 LREF.',
+        documentacionRequerida: '1. Certificación de Sentencia ejecutoriada por medio de oficio por el Juez competente. ',
+        pasosASeguir: '1. Presentarse a la Alcaldía con la documentación, en unidad de registro familiar (REF). 2. Llenar la solicitud con los datos para su trámite. 3. Pagar el arancel establecido, o costo del tramite.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-handshake' 
       },
@@ -337,10 +337,9 @@ const Tramites = () => {
         descripcion: 'Registro de Matrimonio.',
         costo: '$3.68',
         tiempoEspera: '5 días hábiles',
-        requisitos: 'Cualquier pariente por consanguinidad o afinidad de un fallecido, o persona que, por razón de su cargo, profesión u oficio, o vecindad, tuviere conocimiento del fallecimiento de una persona, en el plazo máximo de cuarenta y cinco díashábiles siguientes de dicho conocimiento, deberá informarlo al registrador del estado familiar competente, para que asiente la inscripción de defunción en base al art 78 LREF.',
-        documentacionRequerida: '1. Esquela del Instituto de médicina Legal, constancia o certificado médico expedida y firmada por el médico que atendió o reconoció el cadaver. 2. Copia de DUI del fallecido, el informante y un testigo en caso aplicare.',
-        pasosASeguir: '1. Cuando no fuere posible obtener constancia médica de la muerte, el deceso deberá probarse al registrador delestado familiar a través del documento resultante de la autopsia o del levantamiento del cadáver con relación a a determinación del cuerpo sin vida, o en su caso, mediante la declaración de un testigo mayor de dieciocho en base a la hábiles siguientes de dicho conocimiento, deberá informarlo al años que haya visto el cadáver, quien en todo caso deberá identificarse de acuerdo con lo establecido en la presente ley. 2. No existe limitaciones en cuanto a que el testigo sea familiar de la persona fallecida.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+        requisitos: 'El funcionario autorice un matrimonio deberá dentro de los quince días hábiles siguientes a su celebración, para su respectiva inscripción, remitir en físico o por medios tecnológicos al registrador del Estado Familiar competente, certificación del acta de celebración del matrimonio civil testimonio de escritura matriz del matrimonio civil, o el registro consular de matrimonio según el artículo 63 LREF.',
+        documentacionRequerida: '1. Testimonio de escritura pública de la celabración del matrimonio. 2. En caso de haberse celebrado dentro la alcaldía o gobernación, PGR, debe de presentar acta de matrimonio.',
+        pasosASeguir: '1. Presentarse a la Alcaldía con la documentación, en unidad de registro familiar (REF). 2. Llenar la solicitud con los datos para su trámite. 3. Pagar el arancel establecido, o costo del tramite.',  horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-ring' 
       }
     ],

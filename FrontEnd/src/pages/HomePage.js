@@ -11,7 +11,7 @@ const HomePage = () => {
   const [currentSection, setCurrentSection] = useState('servicios-y-noticias');
 
   const handleScroll = useCallback(() => {
-    const sections = ['servicios-y-noticias', 'mapa'];
+    const sections = ['servicios-y-noticias', 'mapa', 'slide-eventos',];
     const scrollY = window.scrollY;
 
     let foundSection = currentSection;
@@ -41,20 +41,23 @@ const HomePage = () => {
 
   return (
     <div className="page-content">
-      <SlideEventos />
+      <section id="slide-eventos"  className={`slide-section ${currentSection === 'slide-eventos' ? 'fade-in' : 'fade-in'}`}>
+        <SlideEventos />
+      </section>
 
-      <section id="servicios-y-noticias" className={`section-container ${currentSection === 'servicios-y-noticias' ? 'fade-in' : 'fade-out'}`}>
-        <h2 className="section-title">Servicios y Noticias</h2>
+      <section id="servicios-y-noticias" className={`section-container ${currentSection === 'servicios-y-noticias' ? 'fade-in' : 'fade-in-down'}`}>
+        <h2 className="section-title">Trámites y Noticias</h2>
         <ServiciosDestacados />
         <AlbumNoticias />
       </section>
 
-      <section id="mapa" className={`map-section ${currentSection === 'mapa' ? 'fade-in' : 'fade-out'}`}>
+      <section id="mapa" className={`map-section ${currentSection === 'mapa' ? 'fade-in-up' : 'fade-out'}`}>
         <h2 className="section-title">Mapa Interactivo</h2>
         <MapaOriente />
       </section>
     </div>
   );
 };
+
 
 export default HomePage;
