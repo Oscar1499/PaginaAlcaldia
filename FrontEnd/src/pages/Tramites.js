@@ -547,50 +547,18 @@ const Tramites = () => {
         icono: 'fa-solid fa-file-contract' 
       }
     ],
-    'Trámites de Contravencional': [
+    'Contravencional': [
+      
       { 
-        nombre: 'Denuncia', 
-        descripcion: 'Proceso para realizar una denuncia oficial.',
-        costo: 'Gratis',
-        tiempoEspera: '2 días hábiles',
-        requisitos: 'Identificación, pruebas.',
-        documentacionRequerida: 'Formulario de denuncia, identificación.',
-        pasosASeguir: '1. Llenar formulario. 2. Presentar pruebas. 3. Registrar denuncia.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-exclamation-circle' 
-      },
-      { 
-        nombre: 'Mediación', 
-        descripcion: 'Proceso para resolver conflictos mediante mediación.',
-        costo: '$25',
-        tiempoEspera: '5 días hábiles',
-        requisitos: 'Acuerdo entre partes, identificación.',
-        documentacionRequerida: 'Formulario de mediación, identificación.',
-        pasosASeguir: '1. Presentar solicitud. 2. Agendar mediación. 3. Resolver el conflicto.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-handshake' 
-      },
-      { 
-        nombre: 'Apelación de esquela', 
-        descripcion: 'Proceso para apelar una esquela emitida por la alcaldía.',
-        costo: '$15',
-        tiempoEspera: '5 días hábiles',
-        requisitos: 'Esquela, razones para apelación.',
-        documentacionRequerida: 'Copia de esquela, razones escritas.',
-        pasosASeguir: '1. Presentar apelación. 2. Evaluación del caso. 3. Emitir resolución.',
+        nombre: 'Procesos Administrativos Sancionatorios.', 
+        descripcion: 'Denuncias, avisos, y esquelas de desplazamiento impuestas por el CAM.',
+        costo: 'Gratuito',
+        tiempoEspera: '1 meses 6 meses',
+        requisitos: 'Con la resolución final emitida por el Delegado Contravencional quien mediante fundamentación legal y garantizándoles y protegiéndoles en todo momento los Derechos y garantías constitucionales que a todos los ciudadanos les asiste donde finalmente se absolverá o sancionara al infractor con amonestaciones verbales, reparación de daños, decomisos, trabajo de utilidad pública, multas, suspensiones de permisos y licencias y cierre definitivo de los negocios..',
+        documentacionRequerida: '1. Presentarse a la unidad con su Documento Único de Identidad o Pasaporte. 2. Las pruebas que presentan para probar y desvirtuar los hechos.',
+        pasosASeguir: 'a) Que se sienta perjudicado por algún problema de convivencia ciudadana donde se encuentra regulado en la Ordenanza de Convivencia Ciudadana y Contravencional de esta Municipalidad, únicamente se procederá a abrir procesos de aquellas conductas que están descritas como contravenciones en esta Ordenanza las cuales ocasionan algún agravio al usuario que requiere de ese servicio público. b) Que nos proporcionen información para poder emplazar al infractor. c) Que citen con exactitud los hecho ocurriros y en qué lugar han sido ocurridos. d) Que exista disponibilidad de tiempo para asistir a las diferentes audiencias derivadas del proceso que se sigue, como colaborar en todo lo que se le requiera referente al caso que se sigue.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-gavel' 
-      },
-      { 
-        nombre: 'Devolución de decomisos', 
-        descripcion: 'Proceso para solicitar la devolución de bienes decomisados.',
-        costo: '$10',
-        tiempoEspera: '3 días hábiles',
-        requisitos: 'Prueba de propiedad, identificación.',
-        documentacionRequerida: 'Formulario de solicitud, identificación.',
-        pasosASeguir: '1. Presentar solicitud. 2. Validación de propiedad. 3. Devolución de bienes.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-box-open' 
       }
     ]
   };
@@ -640,27 +608,29 @@ const Tramites = () => {
         </Tab.Content>
       </Tab.Container>
 
-      {/* Modal de Detalle */}
-      {tramiteSeleccionado && (
-        <Modal show={showModal} onHide={handleCloseModal}>
-          <Modal.Header closeButton>
-            <Modal.Title>{tramiteSeleccionado.nombre}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <p><strong>Descripción:</strong> {tramiteSeleccionado.descripcion}</p>
-            <p><strong>Costo:</strong> {tramiteSeleccionado.costo}</p>
-            <p><strong>Tiempo de espera:</strong> {tramiteSeleccionado.tiempoEspera}</p>
-            <p><strong>Requisitos:</strong> {tramiteSeleccionado.requisitos}</p>
-            <p><strong>Documentación Requerida:</strong> {tramiteSeleccionado.documentacionRequerida}</p>
-            <p><strong>Pasos a Seguir:</strong> {tramiteSeleccionado.pasosASeguir}</p>
-            <p><strong>Horario de Atención:</strong> {tramiteSeleccionado.horarioAtencion}</p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleCloseModal}>
-              Cerrar
-            </Button>
-          </Modal.Footer>
-        </Modal>
+        {/* Modal de Detalle */}
+    {tramiteSeleccionado && (
+      <Modal show={showModal} onHide={handleCloseModal} size="xl" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{tramiteSeleccionado.nombre}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p><strong>Descripción:</strong> {tramiteSeleccionado.descripcion}</p>
+          <p><strong>Costo:</strong> {tramiteSeleccionado.costo}</p>
+          <p><strong>Tiempo de espera:</strong> {tramiteSeleccionado.tiempoEspera}</p>
+          <p><strong>Requisitos:</strong> {tramiteSeleccionado.requisitos}</p>
+          <p><strong>Documentación Requerida:</strong> {tramiteSeleccionado.documentacionRequerida}</p>
+          <p><strong>Pasos a Seguir:</strong> {tramiteSeleccionado.pasosASeguir}</p>
+          <p><strong>Horario de Atención:</strong> {tramiteSeleccionado.horarioAtencion}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Cerrar
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+
       )}
     </div>
   );

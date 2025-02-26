@@ -149,7 +149,7 @@ const ConsultasGeneralesContenido = () => {
                   <Modal.Title>Horarios de Atención de Bebeteca</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                  <p><strong>De lunes a jueves de 9:30 a 11:30</strong></p>
+                  <p><strong>De lunes a viernes de 8:00 a 4:00</strong></p>
                 </Modal.Body>
                 <Modal.Footer>
                   <Button variant="secondary" onClick={handleHorarioModalClose}>
