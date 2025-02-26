@@ -96,63 +96,31 @@ const Tramites = () => {
         icono: 'fa-solid fa-home' 
       }
     ],
-    'Constancias': [
+    Constancias: [
       { 
-        nombre: 'Constancia Catastral', 
-        descripcion: 'Certificado oficial sobre la ubicación y características de propiedades.',
-        costo: '$10',
+        nombre: 'Solicitud para Acta Catastral de ANDA', 
+        descripcion: 'Solicitud para obtener el acta catastral de ANDA.',
+        costo: '$10.50',
         tiempoEspera: '2 días hábiles',
-        requisitos: 'Documento de identidad, solicitud formal.',
-        documentacionRequerida: 'Copia del plano catastral, identificación.',
-        pasosASeguir: '1. Solicitar constancia. 2. Validación de datos. 3. Emitir constancia.',
+        requisitos: 'Estar solvente con el pago de tasas por servicios del inmueble. El trámite debe ser personal. En caso contrario, el representante debe presentar un poder especial.',
+        documentacionRequerida: '1. Copia de escritura del inmueble. 2. Copia de DUI del propietario. 3. Solvencia del inmueble.',
+        pasosASeguir: '1. Presentar toda la documentación al departamento de registro tributario de esta municipalidad. 2. Esperar la notificación a través de llamada para la respectiva cancelación de la constancia. 3. Luego de la cancelación, pasar por el retiro de la constancia en el departamento de registro tributario de esta municipalidad.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-map' 
       },
       { 
-        nombre: 'Constancia Inscripción', 
-        descripcion: 'Constancia de inscripción en el registro público.',
-        costo: '$15',
-        tiempoEspera: '3 días hábiles',
-        requisitos: 'Documento de inscripción, solicitud.',
-        documentacionRequerida: 'Formulario de inscripción, identificación.',
-        pasosASeguir: '1. Presentar documento. 2. Validación. 3. Emitir constancia.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-pen' 
-      },
-      { 
-        nombre: 'Constancia Cementerios', 
-        descripcion: 'Constancia de inhumación o ubicación en el cementerio.',
-        costo: '$20',
-        tiempoEspera: '4 días hábiles',
-        requisitos: 'Registro de fallecimiento, solicitud.',
-        documentacionRequerida: 'Acta de defunción, solicitud de constancia.',
-        pasosASeguir: '1. Presentar solicitud. 2. Validación de datos. 3. Emitir constancia.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-cross' 
-      },
-      { 
-        nombre: 'Constancia Municipal', 
-        descripcion: 'Certificado de residencia o domicilio.',
-        costo: '$12',
+        nombre: 'Solicitud para Acta Catastral EEO', 
+        descripcion: 'Solicitud para obtener el acta catastral EEO.',
+        costo: '$10.50',
         tiempoEspera: '2 días hábiles',
-        requisitos: 'Comprobante de residencia, identificación.',
-        documentacionRequerida: 'Factura reciente, identificación.',
-        pasosASeguir: '1. Presentar solicitud. 2. Validación de datos. 3. Emitir constancia.',
+        requisitos: 'Estar solvente con el pago de tasas por servicios del inmueble. El trámite debe ser personal. En caso contrario, el representante debe presentar un poder especial.',
+        documentacionRequerida: '1. Copia de escritura del inmueble. 2. Copia de DUI del propietario. 3. Solvencia del inmueble.',
+        pasosASeguir: '1. Presentar toda la documentación al departamento de registro tributario de esta municipalidad. 2. Esperar la notificación a través de llamada para la respectiva cancelación de la constancia. 3. Luego de la cancelación, pasar por el retiro de la constancia en el departamento de registro tributario de esta municipalidad.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-building' 
-      },
-      { 
-        nombre: 'Constancia ANDA', 
-        descripcion: 'Certificado relacionado con el servicio de agua.',
-        costo: '$8',
-        tiempoEspera: '1 día hábil',
-        requisitos: 'Factura de agua, identificación.',
-        documentacionRequerida: 'Factura, identificación oficial.',
-        pasosASeguir: '1. Solicitar constancia. 2. Validación de datos. 3. Emitir constancia.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-water' 
+        icono: 'fa-solid fa-map' 
       }
     ],
+    
     'Trámites Empresariales': [
       { 
         nombre: 'Vialidad Municipal',
@@ -345,48 +313,26 @@ const Tramites = () => {
     ],
     'Inmuebles': [
       { 
-        nombre: 'Calificaciones de oficio de inmuebles', 
-        descripcion: 'Calificación oficial de inmuebles.',
-        costo: '$30',
-        tiempoEspera: '10 días hábiles',
-        requisitos: 'Documentos del inmueble.',
-        documentacionRequerida: 'Escritura, recibo de impuestos.',
-        pasosASeguir: '1. Presentar documentos. 2. Evaluación. 3. Emitir calificación.',
+        nombre: 'Inscripción de Inmueble', 
+        descripcion: 'Inscripción de un inmueble en el registro.',
+        costo: '$ -',
+        tiempoEspera: '3 días hábiles',
+        requisitos: 'El trámite debe ser personal. En caso contrario, el representante debe presentar un poder especial.',
+        documentacionRequerida: '1. Copia de escritura del inmueble. 2. Copia de DUI del propietario del inmueble.',
+        pasosASeguir: '1. Presentar toda la documentación al departamento de registro tributario de esta municipalidad. 2. Esperar la notificación de la inspección, para verificación de servicios recibidos en el inmueble, para la respectiva calificación. 3. Notificación del pago mensual de tasas por servicios municipales.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-home' 
       },
       { 
-        nombre: 'Inscripción de inmueble por comodato', 
-        descripcion: 'Inscripción de inmuebles en comodato.',
-        costo: '$40',
-        tiempoEspera: '5 días hábiles',
-        requisitos: 'Contrato de comodato.',
-        documentacionRequerida: 'Contrato, identificación.',
-        pasosASeguir: '1. Presentar contrato. 2. Validación de datos. 3. Inscribir inmueble.',
+        nombre: 'Solicitud para Inscripción de Empresas o Negocios', 
+        descripcion: 'Solicitud para inscribir empresas o negocios.',
+        costo: '$ -',
+        tiempoEspera: '3 días hábiles',
+        requisitos: 'El trámite debe ser personal. En caso contrario, el representante debe presentar un poder especial.',
+        documentacionRequerida: '1. Copia de escritura del inmueble. 2. Copia de DUI del propietario del inmueble. 3. Copia de escritura de constitución (si es asociación). 4. Balance inicial. 5. Declaración jurada. 6. Solvencia municipal. 7. Vialidad.',
+        pasosASeguir: '1. Presentar toda la documentación al departamento de registro tributario de esta municipalidad. 2. Esperar la notificación a través de llamada o de forma presencial de la determinación de pago de impuestos por mes de la empresa o negocio y firmar dicho documento. 3. Luego de la cancelación, pasar por el retiro de la constancia en el departamento de registro tributario de esta municipalidad.',
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-building' 
-      },
-      { 
-        nombre: 'Traspasos de inmuebles', 
-        descripcion: 'Traspaso de propiedad de inmuebles.',
-        costo: '$60',
-        tiempoEspera: '7 días hábiles',
-        requisitos: 'Escritura pública, pago de impuestos.',
-        documentacionRequerida: 'Escritura, identificación.',
-        pasosASeguir: '1. Presentar escritura. 2. Validación de pagos. 3. Traspasar inmueble.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-exchange-alt' 
-      },
-      { 
-        nombre: 'Traspasos de inmuebles por herencia', 
-        descripcion: 'Traspaso de propiedad por herencia.',
-        costo: '$100',
-        tiempoEspera: '15 días hábiles',
-        requisitos: 'Certificado de defunción, testamento.',
-        documentacionRequerida: 'Testamento, certificado de defunción.',
-        pasosASeguir: '1. Presentar documentos. 2. Validación de herencia. 3. Transferir propiedad.',
-        horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
-        icono: 'fa-solid fa-people-carry' 
+        icono: 'fa-solid fa-briefcase' 
       }
     ],
     'Trámites de Construcción': [
@@ -560,7 +506,161 @@ const Tramites = () => {
         horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
         icono: 'fa-solid fa-gavel' 
       }
-    ]
+    ],
+
+              'Mercado': [
+        { 
+          nombre: 'Solvencia de impuesto de los mercados', 
+          descripcion: 'Obtención de constancia de puesto.',
+          costo: '$3.00',
+          tiempoEspera: 'Máximo 10 minutos',
+          requisitos: '1) Estar inscritos en el sistema de SIMERCO. 2) Estar al día con los pagos de los impuestos de los mercados.',
+          documentacionRequerida: '1) Presentar el DUI. 2) Presentar nombre de locatario del puesto.',
+          pasosASeguir: 'Presentarse en la Unidad de Mercados.',
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-file-alt'
+        },
+        { 
+          nombre: 'Planes de pagos de los puestos que están en mora', 
+          descripcion: 'Opción para regularizar deudas de los puestos.',
+          costo: 'Gratis',
+          tiempoEspera: 'Máximo 10 minutos',
+          requisitos: '1) Estar inscritos en el sistema de SIMERCO. 2) Cancelar el 30% de la deuda total.',
+          documentacionRequerida: '1) Presentar el DUI. 2) Presentar nombre de locatario del puesto. 3) Estado de cuentas.',
+          pasosASeguir: 'Presentarse en la Unidad de Mercados.',
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-credit-card'
+        },
+        { 
+          nombre: 'Estado de cuentas', 
+          descripcion: 'Verificación del estado de cuentas de los puestos.',
+          costo: 'Gratis',
+          tiempoEspera: 'Máximo 10 minutos',
+          requisitos: '1) Estar inscritos en el sistema de SIMERCO.',
+          documentacionRequerida: '1) Presentar el DUI. 2) Presentar nombre de locatario del puesto.',
+          pasosASeguir: 'Presentarse en la Unidad de Mercados.',
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-file-invoice'
+        },
+        { 
+          nombre: 'Pago de impuestos de los mercados municipales', 
+          descripcion: 'Pago de impuestos correspondientes a los mercados.',
+          costo: 'Lo define su tipo de impuesto',
+          tiempoEspera: 'Máximo 10 minutos',
+          requisitos: '1) Estar inscritos en el sistema de SIMERCO. 2) Estar al día con los impuestos.',
+          documentacionRequerida: '1) Presentar el DUI. 2) Presentar tarjeta de cobro al día. 3) Presentar nombre de locatario del puesto.',
+          pasosASeguir: 'Presentarse en la Unidad de Mercados.',
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-money-bill'
+        },
+        { 
+          nombre: 'Trámites de licencia de comercialización', 
+          descripcion: 'Obtención o renovación de licencias de comercialización.',
+          costo: '$5.25, $10.50, $12.60 (dependiendo del trámite)',
+          tiempoEspera: 'Máximo 10 minutos',
+          requisitos: '1) Estar inscritos en el sistema de SIMERCO. 2) Cancelar la licencia.',
+          documentacionRequerida: '1) Presentar el DUI. 2) Presentar recibo de cancelación de la licencia. 3) Presentar nombre de locatario del puesto.',
+          pasosASeguir: 'Presentarse en la Unidad de Mercados.',
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-id-card'
+        },
+        { 
+          nombre: 'Autorización de remodelación de puesto', 
+          descripcion: 'Solicitud para remodelar el puesto.',
+          costo: 'Gratis',
+          tiempoEspera: 'Máximo 10 minutos',
+          requisitos: '1) Estar inscritos en el sistema de SIMERCO. 2) Estar al día con sus impuestos de los mercados municipales.',
+          documentacionRequerida: '1) Presentar el DUI. 2) Presentar tarjeta de cobro al día. 3) Presentar nombre de locatario del puesto.',
+          pasosASeguir: 'Presentarse en la Unidad de Mercados.',
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-tools'
+        }, 
+        { 
+          nombre: 'Constancia de puesto', 
+          descripcion: 'Obtención de una constancia que acredita la ocupación del puesto.',
+          costo: '$3.00',
+          tiempoEspera: 'Máximo 10 minutos',
+          requisitos: '1) Estar inscritos en el sistema de SIMERCO. 2) Estar al día con los pagos de los impuestos de los mercados.',
+          documentacionRequerida: '1) Presentar el DUI. 2) Presentar nombre de locatario del puesto.',
+          pasosASeguir: 'Presentarse en la Unidad de Mercados.',
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-certificate'
+        }
+      ],
+      "Visto Bueno": [
+        { 
+          nombre: 'Matriculas', 
+          descripcion: 'Elaboración de Cartas de Venta', 
+          costo: '$3.77 carta de venta',
+          tiempoEspera: '10 a 15 minutos',
+          requisitos: 'Reglamento para el uso de fierros o marcas de herrar ganado y traslado de semovientes art.73 y ordenanza municipal.',
+          documentacionRequerida: 'DUI de comprador vigente, DUI de vendedor vigente, Matrícula de fierro vigente, DUI de comprador y vendedor, matrícula de fierro vigente, partida de nacimiento del comprador y 2 fotografías, para acta de traspaso de matrícula de fierro.',
+          pasosASeguir: [
+            '1. Presentar los documentos requeridos.',
+            '2. Esperar la revisión de los documentos.',
+            '3. Recibir la elaboración del documento solicitado.',
+            '4. Recibir el mandamiento y/o recibo de cancelación.',
+            '5. Firmar junto a la alcaldesa y el secretario o secretaria municipal.',
+            '6. Recibir el documento final.'
+          ],
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-file-alt' 
+        },
+        { 
+          nombre: 'Actas de Traspaso', 
+          descripcion: 'Elaboración de acta de traspaso de matrícula de fierro', 
+          costo: '$21.17',
+          tiempoEspera: '10 a 15 minutos',
+          requisitos: 'Reglamento para el uso de fierros o marcas de herrar ganado y traslado de semovientes art.73 y ordenanza municipal.',
+          documentacionRequerida: 'DUI de comprador vigente, DUI de vendedor vigente, Matrícula de fierro vigente, DUI de comprador y vendedor, matrícula de fierro vigente, partida de nacimiento del comprador y 2 fotografías.',
+          pasosASeguir: [
+            '1. Presentar los documentos requeridos.',
+            '2. Esperar la revisión de los documentos.',
+            '3. Recibir la elaboración del acta de traspaso.',
+            '4. Firmar junto a la alcaldesa y el secretario o secretaria municipal.',
+            '5. Recibir el documento final.'
+          ],
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-file-alt' 
+        },
+        { 
+          nombre: 'Guías de Conducción', 
+          descripcion: 'Elaboración de guías de conducción de ganado a otras jurisdicciones', 
+          costo: '$2.15 por cabeza',
+          tiempoEspera: '10 a 15 minutos',
+          requisitos: 'De conformidad al artículo 73, del Reglamento para el uso de fierro o marcas de herrar ganado y traslado de semovientes.',
+          documentacionRequerida: 'DUI vigente del contribuyente que solicita la guía, DUI del conductor, matrícula de fierro del contribuyente que solicita la guía, tarjeta de circulación.',
+          pasosASeguir: [
+            '1. Presentar los documentos requeridos.',
+            '2. Esperar la revisión de los documentos.',
+            '3. Recibir la elaboración del documento solicitado.',
+            '4. Recibir el mandamiento o recibo de pago.',
+            '5. Firmar junto a la alcaldesa y el secretario municipal.',
+            '6. Recibir el documento final.'
+          ],
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-truck' 
+        },
+        { 
+          nombre: 'Cobros de Matriculas', 
+          descripcion: 'Cobro de matrícula de fierro de herrar ganado', 
+          costo: '$21.17',
+          tiempoEspera: '10 a 15 minutos',
+          requisitos: 'Ordenanza de tasas municipales, art. 21, publicada en el diario oficial Tomo No 424, PÁGINA 70, NÚMERO: 135 fecha 22 de julio de 2019.',
+          documentacionRequerida: 'Matrícula de fierro.',
+          pasosASeguir: [
+            '1. Presentar la matrícula de fierro.',
+            '2. Esperar la revisión de la matrícula.',
+            '3. Verificar en el libro de anotaciones.',
+            '4. Recibir el mandamiento o recibo.',
+            '5. Pagar en caja.',
+            '6. Recibir el recibo final.'
+          ],
+          horarioAtencion: 'Lunes a Viernes 8 AM - 4 PM',
+          icono: 'fa-solid fa-money-bill' 
+        }
+      ]
+
   };
 
   const handleShowModal = (tramite) => {

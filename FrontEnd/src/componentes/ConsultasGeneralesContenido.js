@@ -17,10 +17,8 @@ const ConsultasGeneralesContenido = () => {
 
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-5 text-primary">Servicios de Salud en La Unión</h1>
-      <p className="lead text-center mb-5">
-        Accede a una variedad de servicios de salud para ti y tu familia.
-      </p>
+      <h1 className="text-center mb-5 text-primary">Servicios de Salud en La Unión Sur</h1>
+   
 
       {/* Coordinación con Instituciones y Escuelas */}
       <section className="mb-5">
