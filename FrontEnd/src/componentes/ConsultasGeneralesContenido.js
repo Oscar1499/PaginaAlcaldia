@@ -27,7 +27,7 @@ const ConsultasGeneralesContenido = () => {
           <div className="card shadow-sm">
             <img src={Actividad1} alt="Psicología" className="card-img-top" />
             <div className="card-body">
-              <h2 className="card-title">Psicología</h2>
+              <h2 className="card-title">Psicología Clínica</h2>
               <p className="card-text">
                 Consulta con profesionales para el manejo de la salud mental y emocional.
               </p>
@@ -38,7 +38,7 @@ const ConsultasGeneralesContenido = () => {
           <div className="card shadow-sm">
             <img src={Actividad2} alt="Nutrición" className="card-img-top" />
             <div className="card-body">
-              <h2 className="card-title">Nutrición</h2>
+              <h2 className="card-title">Terapia Familiar</h2>
               <p className="card-text">
                 Asesoría nutricional para mejorar hábitos alimenticios y bienestar general.
               </p>
@@ -49,7 +49,43 @@ const ConsultasGeneralesContenido = () => {
           <div className="card shadow-sm">
             <img src={Actividad3} alt="Medicina General" className="card-img-top" />
             <div className="card-body">
-              <h2 className="card-title">Medicina General</h2>
+              <h2 className="card-title">Terapia Individual</h2>
+              <p className="card-text">
+                Atención médica integral para el diagnóstico y tratamiento de diversas afecciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <div className="row">
+        <div className="col-md-4">
+          <div className="card shadow-sm">
+            <img src={Actividad1} alt="Psicología" className="card-img-top" />
+            <div className="card-body">
+              <h2 className="card-title">Orientación y Consejería</h2>
+              <p className="card-text">
+                Consulta con profesionales para el manejo de la salud mental y emocional.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="card shadow-sm">
+            <img src={Actividad2} alt="Nutrición" className="card-img-top" />
+            <div className="card-body">
+              <h2 className="card-title">Tratamientos de Problemas Psicopáticos</h2>
+              <p className="card-text">
+                Asesoría nutricional para mejorar hábitos alimenticios y bienestar general.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="card shadow-sm">
+            <img src={Actividad3} alt="Medicina General" className="card-img-top" />
+            <div className="card-body">
+              <h2 className="card-title">Terapia de Lenguaje</h2>
               <p className="card-text">
                 Atención médica integral para el diagnóstico y tratamiento de diversas afecciones.
               </p>
