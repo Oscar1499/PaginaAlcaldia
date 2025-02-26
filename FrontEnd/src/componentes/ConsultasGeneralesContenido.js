@@ -3,192 +3,185 @@ import '../estilos/consultasgenerales.css';
 import Actividad1 from '../assets/iconos/bebetecaslider1.jpeg'; 
 import Actividad2 from '../assets/iconos/bebetecaslider2.jpg'; 
 import Actividad3 from '../assets/iconos/bebetecaslider3.jpeg'; 
+import { Modal, Button, Accordion, Card } from 'react-bootstrap';
 
 const ConsultasGeneralesContenido = () => {
-  const [isOpenGeneralInfo, setIsOpenGeneralInfo] = useState(false);
-  const [isOpenSpecialized, setIsOpenSpecialized] = useState(false);
+  const [showHorarioModal, setShowHorarioModal] = useState(false);
+  const [showRequisitosModal, setShowRequisitosModal] = useState(false);
 
-  const toggleGeneralInfo = () => {
-    setIsOpenGeneralInfo(!isOpenGeneralInfo);
-  };
+  const handleHorarioModalClose = () => setShowHorarioModal(false);
+  const handleHorarioModalShow = () => setShowHorarioModal(true);
 
-  const toggleSpecialized = () => {
-    setIsOpenSpecialized(!isOpenSpecialized);
-  };
+  const handleRequisitosModalClose = () => setShowRequisitosModal(false);
+  const handleRequisitosModalShow = () => setShowRequisitosModal(true);
 
   return (
     <div className="container my-5">
-      <h1 className="text-center">Servicios de Salud en La Unión</h1>
-      <p className="lead text-center">
+      <h1 className="text-center mb-5 text-primary">Servicios de Salud en La Unión</h1>
+      <p className="lead text-center mb-5">
         Accede a una variedad de servicios de salud para ti y tu familia.
       </p>
-      <div className="row">
-        <div className="col-md-4">
-          <div className="card shadow-sm">
-            <img src={Actividad1} alt="Psicología" className="card-img-top" />
-            <div className="card-body">
-              <h2 className="card-title">Psicología Clínica</h2>
-              <p className="card-text">
-                Consulta con profesionales para el manejo de la salud mental y emocional.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card shadow-sm">
-            <img src={Actividad2} alt="Nutrición" className="card-img-top" />
-            <div className="card-body">
-              <h2 className="card-title">Terapia Familiar</h2>
-              <p className="card-text">
-                Asesoría nutricional para mejorar hábitos alimenticios y bienestar general.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card shadow-sm">
-            <img src={Actividad3} alt="Medicina General" className="card-img-top" />
-            <div className="card-body">
-              <h2 className="card-title">Terapia Individual</h2>
-              <p className="card-text">
-                Atención médica integral para el diagnóstico y tratamiento de diversas afecciones.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-   
-      <div className="row">
-        <div className="col-md-4">
-          <div className="card shadow-sm">
-            <img src={Actividad1} alt="Psicología" className="card-img-top" />
-            <div className="card-body">
-              <h2 className="card-title">Orientación y Consejería</h2>
-              <p className="card-text">
-                Consulta con profesionales para el manejo de la salud mental y emocional.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card shadow-sm">
-            <img src={Actividad2} alt="Nutrición" className="card-img-top" />
-            <div className="card-body">
-              <h2 className="card-title">Tratamientos de Problemas Psicopáticos</h2>
-              <p className="card-text">
-                Asesoría nutricional para mejorar hábitos alimenticios y bienestar general.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card shadow-sm">
-            <img src={Actividad3} alt="Medicina General" className="card-img-top" />
-            <div className="card-body">
-              <h2 className="card-title">Terapia de Lenguaje</h2>
-              <p className="card-text">
-                Atención médica integral para el diagnóstico y tratamiento de diversas afecciones.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Acordeón para requisitos */}
-      <div className="accordion mt-5" id="accordionExample">
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingOne">
-            <button
-              className={`accordion-button ${isOpenGeneralInfo ? '' : 'collapsed'}`}
-              type="button"
-              onClick={toggleGeneralInfo}
-              aria-expanded={isOpenGeneralInfo ? 'true' : 'false'}
-              aria-controls="collapseOne"
-            >
-              <strong>¿Cómo acceder a los servicios y requisitos?</strong>
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            className={`accordion-collapse collapse ${isOpenGeneralInfo ? 'show' : ''}`}
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body">
-              <p><strong>Requisitos para acceder a los servicios:</strong></p>
-              <ul>
-                <li>Ser residente en el municipio de La Unión.</li>
-                <li>Presentar una identificación válida (DUI).</li>
-                <li>Recibo de servicios públicos como comprobante de domicilio.</li>
-              </ul>
+      {/* Coordinación con Instituciones y Escuelas */}
+      <section className="mb-5">
+        <h2 className="text-secondary mb-3">Coordinación con Instituciones y Escuelas para Apoyo</h2>
+        <p>
+          Con el objetivo de proporcionar un mejor apoyo a la comunidad educativa, contamos con alianzas estratégicas con diversas instituciones:
+        </p>
+        <ul className="list-group mb-3">
+          <li className="list-group-item">CONAPINA</li>
+          <li className="list-group-item">ISDEMU</li>
+          <li className="list-group-item">Centros Educativos</li>
+          <li className="list-group-item">Clínica de la Playa</li>
+        </ul>
+        <p><strong>Programas disponibles:</strong></p>
+        <ul className="list-group mb-3">
+          <li className="list-group-item">Charlas psicológicas a los alumnos</li>
+          <li className="list-group-item">Capacitación a los maestros</li>
+        </ul>
+      </section>
 
-              <p><strong>Pasos para acceder a los servicios:</strong></p>
-              <ol>
-                <li>Completar el formulario de solicitud en línea o en la sede.</li>
-                <li>Presentar los documentos requeridos en el momento de la cita.</li>
-                <li>Esperar la confirmación y programación de la consulta.</li>
-              </ol>
+                    {/* Carrusel de Imágenes */}
+          <section className="mb-5">
+            <div className="row">
+              {/* Actividad 1 - Psicología Infantil */}
+              <div className="col-md-4 mb-3">
+                <div className="card shadow-lg">
+                  <img src={Actividad1} className="card-img-top" alt="Psicología Infantil" />
+                  <div className="card-body">
+                    <h5 className="card-title">Psicología Infantil</h5>
+                    <p className="card-text">Atención psicológica especializada para el bienestar emocional de los niños.</p>
+                  </div>
+                </div>
+              </div>
 
-              <p><strong>Documentación requerida:</strong></p>
-              <ul>
-                <li>Fotocopia del DUI del solicitante.</li>
-                <li>Fotografía reciente tamaño cédula.</li>
-                <li>Formulario con los datos personales y de contacto.</li>
-              </ul>
+              {/* Actividad 2 - Terapia Familiar */}
+              <div className="col-md-4 mb-3">
+                <div className="card shadow-lg">
+                  <img src={Actividad2} className="card-img-top" alt="Terapia Familiar" />
+                  <div className="card-body">
+                    <h5 className="card-title">Terapia Familiar</h5>
+                    <p className="card-text">Sesiones de terapia para fortalecer las relaciones familiares y la comunicación.</p>
+                  </div>
+                </div>
+              </div>
 
-              <p><strong>¡Es fácil y accesible!</strong> Contáctanos para más información.</p>
+              {/* Actividad 3 - Estimulación Temprana */}
+              <div className="col-md-4 mb-3">
+                <div className="card shadow-lg">
+                  <img src={Actividad3} className="card-img-top" alt="Estimulación Temprana" />
+                  <div className="card-body">
+                    <h5 className="card-title">Estimulación Temprana</h5>
+                    <p className="card-text">Desarrollo de habilidades cognitivas, motoras y emocionales en niños pequeños.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Actividad 4 - Orientación y Consejería */}
+              <div className="col-md-4 mb-3">
+                <div className="card shadow-lg">
+                  <img src={Actividad1} className="card-img-top" alt="Orientación y Consejería" />
+                  <div className="card-body">
+                    <h5 className="card-title">Orientación y Consejería</h5>
+                    <p className="card-text">Apoyo en la toma de decisiones y gestión de emociones en padres y niños.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Actividad 5 - Tratamientos Psicológicos Especializados */}
+              <div className="col-md-4 mb-3">
+                <div className="card shadow-lg">
+                  <img src={Actividad2} className="card-img-top" alt="Tratamientos Psicológicos" />
+                  <div className="card-body">
+                    <h5 className="card-title">Tratamientos Psicológicos Especializados</h5>
+                    <p className="card-text">Tratamientos enfocados en niños con trastornos emocionales o psicológicos graves.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Actividad 6 - Terapia del Lenguaje Infantil */}
+              <div className="col-md-4 mb-3">
+                <div className="card shadow-lg">
+                  <img src={Actividad3} className="card-img-top" alt="Terapia del Lenguaje Infantil" />
+                  <div className="card-body">
+                    <h5 className="card-title">Terapia del Lenguaje Infantil</h5>
+                    <p className="card-text">Tratamiento especializado para mejorar el habla y la comunicación en los más pequeños.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        {/* Acordeón para Servicios Especializados */}
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingTwo">
-            <button
-              className={`accordion-button ${isOpenSpecialized ? '' : 'collapsed'}`}
-              type="button"
-              onClick={toggleSpecialized}
-              aria-expanded={isOpenSpecialized ? 'true' : 'false'}
-              aria-controls="collapseTwo"
-            >
-              <strong>Servicios Especializados</strong>
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            className={`accordion-collapse collapse ${isOpenSpecialized ? 'show' : ''}`}
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body">
-              <p><strong>Servicios ofrecidos:</strong></p>
-              <ul>
-                <li>Consultas de Ginecología: Atención integral para la salud reproductiva.</li>
-                <li>Enfermería: Servicios de atención básica y seguimiento de pacientes.</li>
-                <li>Electrocardiogramas: Exámenes para evaluar la salud cardiovascular.</li>
-                <li>Citología: Exámenes preventivos para la detección temprana de enfermedades.</li>
-                <li>Atención psicológica individual y consejería terapéutica, priorizando casos de violencia contra las mujeres.</li>
-                <li>Psicología especializada para niñas, mujeres de todas las edades y niños de 6 a 17 años.</li>
-              </ul>
-              <p><strong>¿Cómo agendar una cita?</strong></p>
-              <ul>
-                <li>Acércate a las oficinas del Departamento de Casa de la Mujer o contáctanos por teléfono.</li>
-                <li>Agendar cita brindando datos generales: Nombre completo, edad y número de contacto.</li>
-                <li>Recibirás una llamada para confirmar la fecha y hora de tu cita.</li>
-              </ul>
-              <p><strong>¡Cuidamos de tu salud y bienestar!</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
+       {/* Sección de Información Importante */}
+       <section className="mb-5">
+        <h2 className="text-dark mb-4">Información Importante</h2>
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>¿Cómo acceder a los servicios y requisitos?</Accordion.Header>
+            <Accordion.Body>
+              <Button variant="outline-dark" onClick={handleRequisitosModalShow}>Ver Requisitos</Button>
+              <Modal show={showRequisitosModal} onHide={handleRequisitosModalClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Requisitos para Bebeteca</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <ul>
+                    <li><strong>Edad:</strong> Tener entre 3 meses hasta 7 años de edad.</li>
+                    <li><strong>Documentación:</strong> Partida de nacimiento.</li>
+                    <li><strong>Salud:</strong> Tarjeta de vacunación, constancia si tiene problemas de salud.</li>
+                    <li><strong>Otros:</strong> Copia de DUI del responsable y tiempo disponible para toda la jornada.</li>
+                  </ul>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleRequisitosModalClose}>
+                    Cerrar
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Horarios de Atención</Accordion.Header>
+            <Accordion.Body>
+              <Button variant="outline-dark" onClick={handleHorarioModalShow}>Ver Horarios</Button>
+              <Modal show={showHorarioModal} onHide={handleHorarioModalClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Horarios de Atención de Bebeteca</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p><strong>De lunes a jueves de 9:30 a 11:30</strong></p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleHorarioModalClose}>
+                    Cerrar
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </section>
 
-      {/* Botón de Explorar Más Recursos */}
-      <div className="text-center mt-5">
-        <button className="btn btn-primary btn-lg">Explorar Más Recursos</button>
-      </div>
+      {/* Servicios de Atención en la Bebeteca */}
+      <section>
+        <h2 className="text-secondary mb-3">Servicios de Atención</h2>
+        <ul className="list-group mb-3">
+          <li className="list-group-item">Desarrollo personal y social</li>
+          <li className="list-group-item">Lectura de cuentos</li>
+          <li className="list-group-item">Comunicación y expresión</li>
+          <li className="list-group-item">Habilidades motoras</li>
+          <li className="list-group-item">Juegos lúdicos</li>
+        </ul>
+        <p><strong>Visitas especiales:</strong></p>
+        <ul className="list-group">
+          <li className="list-group-item">Visitas de los Kider</li>
+          <li className="list-group-item">Círculos de familia</li>
+        </ul>
+      </section>
+
+    
     </div>
   );
 };
 
 export default ConsultasGeneralesContenido;
-
